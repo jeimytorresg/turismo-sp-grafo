@@ -1,0 +1,68 @@
+@startuml
+title Reutilización de vocabularios: clases propias y clases externas (1B)
+hide circle
+left to right direction
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
+skinparam dpi 110
+skinparam nodesep 14
+skinparam ranksep 90
+
+package "Clases propias (ts:)" as PT {
+  class "ts:Lugar" as Lugar
+  class "ts:Distrito" as Distrito
+  class "ts:Alojamiento" as Alojamiento
+  class "ts:EspacioCultural" as Espacio
+  class "ts:AtraccionTuristica" as Atraccion
+  class "ts:Biblioteca" as Biblioteca
+  class "ts:Teatro" as Teatro
+  class "ts:MuseoAcervo" as MuseoAcervo
+  class "ts:Museo" as Museo
+  class "ts:Galeria" as Galeria
+}
+
+package "Schema.org" as PS {
+  class "schema:Place" as sPlace
+  class "schema:AdministrativeArea" as sAdmin
+  class "schema:Accommodation" as sAcc
+  class "schema:CivicStructure" as sCivic
+  class "schema:TouristAttraction" as sTour
+  class "schema:Library" as sLib
+  class "schema:PerformingArtsTheater" as sThe
+  class "schema:Museum" as sMus
+  class "schema:ArtGallery" as sGal
+}
+
+package "GeoSPARQL y WGS84" as PG {
+  class "geo:Feature" as gFeat
+  class "wgs:SpatialThing" as wSp
+}
+
+package "DBpedia Ontology" as PD {
+  class "dbo:District" as dDis
+  class "dbo:Library" as dLib
+  class "dbo:Theatre" as dThe
+  class "dbo:Museum" as dMus
+}
+
+Lugar --|> sPlace
+Lugar --|> gFeat
+Lugar --|> wSp
+Distrito --|> sAdmin
+Distrito --|> gFeat
+Distrito --|> dDis
+Alojamiento --|> sAcc
+Espacio --|> sCivic
+Atraccion --|> sTour
+Biblioteca --|> sLib
+Biblioteca --|> dLib
+Teatro --|> sThe
+Teatro --|> dThe
+MuseoAcervo --|> sMus
+MuseoAcervo --|> dMus
+Museo --|> sMus
+Museo --|> dMus
+Galeria --|> sGal
+@enduml

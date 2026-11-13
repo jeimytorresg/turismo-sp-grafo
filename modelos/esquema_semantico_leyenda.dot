@@ -1,0 +1,8 @@
+digraph L { graph [rankdir=TB, fontname="Helvetica", label=<<B>Leyenda</B>>, labelloc=t, fontsize=18, style=rounded, pad=0.2, nodesep=0.3];
+ node [fontname="Helvetica", fontsize=13]; edge [style=invis];
+ l1 [label="Clase (rdfs:Class)", shape=ellipse, style=filled, fillcolor="#cfe0f5", color="#3d6cb0"];
+ l5 [label="Clase de otro vocabulario\n(borde punteado)", shape=ellipse, style="filled,dashed", fillcolor="#cfe0f5", color="#3d6cb0"];
+ l2 [label="Propiedad de relación\n(owl:ObjectProperty)", shape=box, style=filled, fillcolor="#f7c6c6", color="#c0392b"];
+ l3 [label="Propiedad de atributo\n(owl:DatatypeProperty)", shape=box, style="rounded,filled", fillcolor="#fbe6a2", color="#b8921c"];
+ l4 [label="Tipo de dato (XSD)", shape=diamond, style=filled, fillcolor="#d6ecd0", color="#4f9a45"];
+ l1->l5->l2->l3->l4; }

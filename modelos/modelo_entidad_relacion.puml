@@ -1,0 +1,77 @@
+@startuml
+title Modelo entidad-relación: turismo en São Paulo (1B)
+hide circle
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam dpi 110
+
+entity "Distrito" as distrito {
+  * nombre_distrito : texto <<PK>>
+  --
+  geometria : polígono
+}
+
+entity "Alojamiento" as alojamiento {
+  * id_airbnb : entero <<PK>>
+  --
+  * nombre : texto
+  * tipo_habitacion : texto
+  * capacidad : entero
+  * num_resenas : entero
+  * latitud : decimal
+  * longitud : decimal
+  * url_anuncio : texto
+  precio_noche_brl : decimal
+  calificacion_general : decimal
+  calificacion_ubicacion : decimal
+  num_habitaciones : decimal
+}
+
+entity "EspacioCultural" as espacio {
+  * id_espacio : entero <<generado>>
+  --
+  * nombre : texto
+  * tipo_equipamiento : texto
+  * estado_funcionamiento : texto
+  * direccion : texto
+  * subprefeitura : texto
+  * region : texto
+  horario : texto
+  anio_inauguracion : año
+  tematica : texto
+  sitio_web : texto
+}
+
+entity "AtraccionTuristica" as atraccion {
+  * osm_tipo : texto <<PK>>
+  * osm_id : entero <<PK>>
+  --
+  * categoria_osm : texto
+  * latitud : decimal
+  * longitud : decimal
+  nombre : texto
+  direccion : texto
+  horario : texto
+  sitio_web : texto
+  wikidata : texto
+}
+
+distrito ||--o{ alojamiento : "contiene"
+distrito ||--o{ espacio : "contiene"
+distrito |o--o{ atraccion : "contiene"
+alojamiento }o..o{ atraccion : "está cerca de\n(a 1 km o menos)"
+alojamiento -[hidden]right- espacio
+espacio -[hidden]right- atraccion
+
+note bottom of atraccion
+  El distrito de la atracción no viene en el
+  archivo de OpenStreetMap. Se obtiene con la
+  capa de distritos (por eso es opcional).
+end note
+
+note right of distrito
+  La geometría viene de la capa de
+  distritos de la Prefeitura.
+end note
+@enduml

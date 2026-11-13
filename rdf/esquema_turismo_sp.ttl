@@ -1,0 +1,306 @@
+@prefix ts:      <https://ericroco.github.io/turismo-sp-grafo/turismo-sp#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema:  <https://schema.org/> .
+@prefix geo:     <http://www.opengis.net/ont/geosparql#> .
+@prefix wgs:     <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dbo:     <http://dbpedia.org/ontology/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+
+##### Ontología #####
+
+<https://ericroco.github.io/turismo-sp-grafo/turismo-sp> a owl:Ontology ;
+    rdfs:label "Esquema semántico: turismo en São Paulo"@es ;
+    rdfs:comment "Alojamientos de corta estancia, espacios culturales y atracciones turísticas de São Paulo, relacionados por distrito y por cercanía. Reutiliza Schema.org, GeoSPARQL, WGS84, DBpedia Ontology, SKOS, Dublin Core Terms, DCAT y FOAF."@es ;
+    owl:versionInfo "1B" ;
+    dcterms:created "2026-11-11"^^xsd:date ;
+    dcterms:creator ts:daniel-campoverde, ts:erick-rodas, ts:jeimy-torres .
+
+ts:daniel-campoverde a foaf:Person ; foaf:name "Daniel Campoverde" .
+ts:erick-rodas       a foaf:Person ; foaf:name "Erick Rodas" .
+ts:jeimy-torres      a foaf:Person ; foaf:name "Jeimy Torres" .
+
+##### Clases propias que especializan clases reutilizadas #####
+
+ts:Lugar a owl:Class ;
+    rdfs:subClassOf schema:Place, geo:Feature, wgs:SpatialThing ;
+    rdfs:label "Lugar"@es ;
+    rdfs:comment "Clase abstracta. Cualquier sitio de la ciudad con nombre y ubicación. Se declara como Feature de GeoSPARQL para poder asociarle una geometría."@es .
+
+ts:Distrito a owl:Class ;
+    rdfs:subClassOf schema:AdministrativeArea, geo:Feature, dbo:District ;
+    rdfs:label "Distrito"@es ;
+    rdfs:comment "Distrito de la ciudad de São Paulo. Es la zona que une las tres fuentes y tiene geometría de polígono (capa de distritos de la Prefeitura)."@es .
+
+ts:Alojamiento a owl:Class ;
+    rdfs:subClassOf ts:Lugar, schema:Accommodation ;
+    rdfs:label "Alojamiento"@es ;
+    rdfs:comment "Alquiler de corta estancia publicado en Airbnb (Inside Airbnb): casa o departamento completo, habitación privada, compartida o de hotel."@es .
+
+ts:PuntoDeInteres a owl:Class ;
+    rdfs:subClassOf ts:Lugar ;
+    rdfs:label "Punto de interés"@es ;
+    rdfs:comment "Clase abstracta. Lugar que se visita y que puede tener dirección, horario y sitio web. Agrupa lo común de los espacios culturales y las atracciones."@es .
+
+ts:EspacioCultural a owl:Class ;
+    rdfs:subClassOf ts:PuntoDeInteres, schema:CivicStructure ;
+    rdfs:label "Espacio cultural"@es ;
+    rdfs:comment "Equipamiento cultural municipal de la Secretaría Municipal de Cultura (SMC)."@es .
+
+ts:AtraccionTuristica a owl:Class ;
+    rdfs:subClassOf ts:PuntoDeInteres, schema:TouristAttraction ;
+    rdfs:label "Atracción turística"@es ;
+    rdfs:comment "Atracción turística registrada en OpenStreetMap (etiqueta tourism)."@es .
+
+ts:Biblioteca a owl:Class ;
+    rdfs:subClassOf ts:EspacioCultural, schema:Library, dbo:Library ;
+    rdfs:label "Biblioteca"@es ;
+    rdfs:comment "Espacio cultural de la SMC con tipo de equipamiento Biblioteca."@es .
+
+ts:Teatro a owl:Class ;
+    rdfs:subClassOf ts:EspacioCultural, schema:PerformingArtsTheater, dbo:Theatre ;
+    rdfs:label "Teatro"@es ;
+    rdfs:comment "Espacio cultural de la SMC con tipo de equipamiento Teatro."@es .
+
+ts:MuseoAcervo a owl:Class ;
+    rdfs:subClassOf ts:EspacioCultural, schema:Museum, dbo:Museum ;
+    rdfs:label "Museo o acervo"@es ;
+    rdfs:comment "Espacio cultural de la SMC con tipo de equipamiento Museu/Acervo."@es .
+
+ts:Museo a owl:Class ;
+    rdfs:subClassOf ts:AtraccionTuristica, schema:Museum, dbo:Museum ;
+    rdfs:label "Museo"@es ;
+    rdfs:comment "Atracción de OpenStreetMap con tourism=museum."@es .
+
+ts:Galeria a owl:Class ;
+    rdfs:subClassOf ts:AtraccionTuristica, schema:ArtGallery ;
+    rdfs:label "Galería"@es ;
+    rdfs:comment "Atracción de OpenStreetMap con tourism=gallery. Se usa en la pregunta 7."@es .
+
+##### Propiedades de objeto #####
+
+ts:ubicadoEnDistrito a owl:ObjectProperty ;
+    rdfs:subPropertyOf schema:containedInPlace, geo:sfWithin ;
+    rdfs:domain ts:Lugar ;
+    rdfs:range ts:Distrito ;
+    rdfs:label "ubicado en distrito"@es ;
+    rdfs:comment "Distrito donde se encuentra el lugar. En alojamientos y espacios culturales viene del campo de distrito de la fuente; en atracciones se obtiene cruzando las coordenadas con la capa de distritos."@es .
+
+ts:estaCercaDe a owl:ObjectProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range ts:AtraccionTuristica ;
+    rdfs:label "está cerca de"@es ;
+    rdfs:comment "La atracción está a 1 km o menos del alojamiento (distancia entre coordenadas). GeoSPARQL no define una relación con umbral de distancia, por eso es propia."@es .
+
+ts:tipoHabitacion a owl:ObjectProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range skos:Concept ;
+    rdfs:label "tipo de habitación"@es ;
+    rdfs:comment "Concepto del esquema ts:EsquemaTipoHabitacion (campo room_type)."@es .
+
+ts:tipoEquipamiento a owl:ObjectProperty ;
+    rdfs:domain ts:EspacioCultural ;
+    rdfs:range skos:Concept ;
+    rdfs:label "tipo de equipamiento"@es ;
+    rdfs:comment "Concepto del esquema ts:EsquemaTipoEquipamiento (campo tipo de equipamento de la SMC)."@es .
+
+ts:estadoFuncionamiento a owl:ObjectProperty ;
+    rdfs:domain ts:EspacioCultural ;
+    rdfs:range skos:Concept ;
+    rdfs:label "estado de funcionamiento"@es ;
+    rdfs:comment "Concepto del esquema ts:EsquemaEstadoFuncionamiento (campo status de funcionamento de la SMC)."@es .
+
+ts:categoriaOsm a owl:ObjectProperty ;
+    rdfs:domain ts:AtraccionTuristica ;
+    rdfs:range skos:Concept ;
+    rdfs:label "categoría OSM"@es ;
+    rdfs:comment "Concepto del esquema ts:EsquemaCategoriaOsm (valor de la etiqueta tourism)."@es .
+
+##### Propiedades de datos propias #####
+
+ts:claveDistrito a owl:DatatypeProperty ;
+    rdfs:subPropertyOf dcterms:identifier ;
+    rdfs:domain ts:Distrito ;
+    rdfs:range xsd:string ;
+    rdfs:label "clave del distrito"@es ;
+    rdfs:comment "Nombre del distrito sin tildes y en minúsculas. Es la clave que permite unir Inside Airbnb con la SMC."@es .
+
+ts:idAirbnb a owl:DatatypeProperty ;
+    rdfs:subPropertyOf dcterms:identifier ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:integer ;
+    rdfs:label "id de Airbnb"@es ;
+    rdfs:comment "Campo id de listings.csv.gz."@es .
+
+ts:capacidad a owl:DatatypeProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:integer ;
+    rdfs:label "capacidad"@es ;
+    rdfs:comment "Número máximo de huéspedes (campo accommodates)."@es .
+
+ts:numeroHabitaciones a owl:DatatypeProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "número de habitaciones"@es ;
+    rdfs:comment "Campo bedrooms de Inside Airbnb."@es .
+
+ts:precioNocheBRL a owl:DatatypeProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "precio por noche (BRL)"@es ;
+    rdfs:comment "Precio diario en reales brasileños, convertido de texto con el símbolo $ a número."@es .
+
+ts:calificacionGeneral a owl:DatatypeProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "calificación general"@es ;
+    rdfs:comment "Campo review_scores_rating."@es .
+
+ts:calificacionUbicacion a owl:DatatypeProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "calificación de ubicación"@es ;
+    rdfs:comment "Campo review_scores_location."@es .
+
+ts:numeroResenas a owl:DatatypeProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:integer ;
+    rdfs:label "número de reseñas"@es ;
+    rdfs:comment "Campo number_of_reviews."@es .
+
+ts:anioInauguracion a owl:DatatypeProperty ;
+    rdfs:domain ts:EspacioCultural ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "año de inauguración"@es .
+
+ts:tematica a owl:DatatypeProperty ;
+    rdfs:domain ts:EspacioCultural ;
+    rdfs:range xsd:string ;
+    rdfs:label "temática"@es .
+
+ts:subprefeitura a owl:DatatypeProperty ;
+    rdfs:domain ts:EspacioCultural ;
+    rdfs:range xsd:string ;
+    rdfs:label "subprefeitura"@es ;
+    rdfs:comment "Va en EspacioCultural y no en Distrito porque en el archivo de la SMC 8 distritos tienen más de una subprefeitura."@es .
+
+ts:region a owl:DatatypeProperty ;
+    rdfs:domain ts:EspacioCultural ;
+    rdfs:range xsd:string ;
+    rdfs:label "región"@es .
+
+ts:idOsm a owl:DatatypeProperty ;
+    rdfs:subPropertyOf dcterms:identifier ;
+    rdfs:domain ts:AtraccionTuristica ;
+    rdfs:range xsd:integer ;
+    rdfs:label "id de OpenStreetMap"@es ;
+    rdfs:comment "Campo osm_id. Junto con ts:tipoObjetoOsm identifica la atracción."@es .
+
+ts:tipoObjetoOsm a owl:DatatypeProperty ;
+    rdfs:domain ts:AtraccionTuristica ;
+    rdfs:range xsd:string ;
+    rdfs:label "tipo de objeto OSM"@es ;
+    rdfs:comment "node, way o relation."@es .
+
+##### Propiedades reutilizadas directamente (uso previsto) #####
+# schema:name             nombre de cualquier lugar o distrito
+# schema:address          dirección (SMC) y calle (OSM)
+# schema:openingHours     horario (SMC y OSM)
+# schema:url              sitio web (SMC, OSM) y URL del anuncio (Airbnb)
+# schema:sameAs           enlace a Wikidata (OSM)
+# wgs:lat, wgs:long       latitud y longitud (WGS84)
+# geo:hasGeometry         geometría de un Lugar o de un Distrito
+# geo:asWKT               geometría en WKT (POINT en lugares, POLYGON en distritos)
+# dcterms:source          fuente de cada recurso (ver conjuntos de datos abajo)
+
+##### Esquemas de conceptos SKOS #####
+
+ts:EsquemaTipoHabitacion a skos:ConceptScheme ;
+    skos:prefLabel "Tipos de habitación de Inside Airbnb"@es .
+
+ts:TH_CasaDepartamentoCompleto a skos:Concept ; skos:inScheme ts:EsquemaTipoHabitacion ;
+    skos:notation "Entire home/apt" ; skos:prefLabel "Casa o departamento completo"@es .
+ts:TH_HabitacionPrivada a skos:Concept ; skos:inScheme ts:EsquemaTipoHabitacion ;
+    skos:notation "Private room" ; skos:prefLabel "Habitación privada"@es .
+ts:TH_HabitacionCompartida a skos:Concept ; skos:inScheme ts:EsquemaTipoHabitacion ;
+    skos:notation "Shared room" ; skos:prefLabel "Habitación compartida"@es .
+ts:TH_HabitacionHotel a skos:Concept ; skos:inScheme ts:EsquemaTipoHabitacion ;
+    skos:notation "Hotel room" ; skos:prefLabel "Habitación de hotel"@es .
+
+ts:EsquemaEstadoFuncionamiento a skos:ConceptScheme ;
+    skos:prefLabel "Estados de funcionamiento de los espacios culturales de la SMC"@es .
+
+ts:EF_EnFuncionamiento a skos:Concept ; skos:inScheme ts:EsquemaEstadoFuncionamiento ;
+    skos:notation "Em funcionamento" ; skos:prefLabel "En funcionamiento"@es .
+ts:EF_Cerrado a skos:Concept ; skos:inScheme ts:EsquemaEstadoFuncionamiento ;
+    skos:notation "Fechado" ; skos:prefLabel "Cerrado"@es .
+ts:EF_CerradoTemporalmente a skos:Concept ; skos:inScheme ts:EsquemaEstadoFuncionamiento ;
+    skos:notation "Fechado temporariamente" ; skos:prefLabel "Cerrado temporalmente"@es .
+ts:EF_EnObras a skos:Concept ; skos:inScheme ts:EsquemaEstadoFuncionamiento ;
+    skos:notation "Em obras" ; skos:prefLabel "En obras"@es .
+
+ts:EsquemaCategoriaOsm a skos:ConceptScheme ;
+    skos:prefLabel "Categorías turísticas de OpenStreetMap (etiqueta tourism)"@es .
+
+ts:CO_Attraction a skos:Concept ; skos:inScheme ts:EsquemaCategoriaOsm ;
+    skos:notation "attraction" ; skos:prefLabel "Atracción"@es .
+ts:CO_Artwork a skos:Concept ; skos:inScheme ts:EsquemaCategoriaOsm ;
+    skos:notation "artwork" ; skos:prefLabel "Obra de arte"@es .
+ts:CO_Museum a skos:Concept ; skos:inScheme ts:EsquemaCategoriaOsm ;
+    skos:notation "museum" ; skos:prefLabel "Museo"@es .
+ts:CO_Viewpoint a skos:Concept ; skos:inScheme ts:EsquemaCategoriaOsm ;
+    skos:notation "viewpoint" ; skos:prefLabel "Mirador"@es .
+ts:CO_Gallery a skos:Concept ; skos:inScheme ts:EsquemaCategoriaOsm ;
+    skos:notation "gallery" ; skos:prefLabel "Galería"@es .
+ts:CO_Aquarium a skos:Concept ; skos:inScheme ts:EsquemaCategoriaOsm ;
+    skos:notation "aquarium" ; skos:prefLabel "Acuario"@es .
+ts:CO_ThemePark a skos:Concept ; skos:inScheme ts:EsquemaCategoriaOsm ;
+    skos:notation "theme_park" ; skos:prefLabel "Parque temático"@es .
+ts:CO_Zoo a skos:Concept ; skos:inScheme ts:EsquemaCategoriaOsm ;
+    skos:notation "zoo" ; skos:prefLabel "Zoológico"@es .
+
+ts:EsquemaTipoEquipamiento a skos:ConceptScheme ;
+    skos:prefLabel "Tipos de equipamiento cultural de la SMC"@es ;
+    rdfs:comment "Solo se declaran los tipos que usan las preguntas de competencia. Los demás tipos del archivo (salas de cine, casas de cultura, centros culturales, entre otros) se agregan en la etapa 1C a partir de los valores reales de la columna."@es .
+
+ts:TE_Biblioteca a skos:Concept ; skos:inScheme ts:EsquemaTipoEquipamiento ;
+    skos:notation "Biblioteca" ; skos:prefLabel "Biblioteca"@es .
+ts:TE_Teatro a skos:Concept ; skos:inScheme ts:EsquemaTipoEquipamiento ;
+    skos:notation "Teatro" ; skos:prefLabel "Teatro"@es .
+ts:TE_MuseuAcervo a skos:Concept ; skos:inScheme ts:EsquemaTipoEquipamiento ;
+    skos:notation "Museu/Acervo" ; skos:prefLabel "Museo o acervo"@es .
+
+##### Descripción de las fuentes (DCAT) #####
+
+ts:fuenteInsideAirbnb a dcat:Dataset ;
+    dcterms:title "Inside Airbnb, listado detallado de São Paulo (14 de septiembre de 2026)"@es ;
+    dcterms:publisher "Inside Airbnb" ;
+    dcterms:format "CSV comprimido (.gz)" ;
+    dcat:landingPage <https://insideairbnb.com/get-the-data/> ;
+    dcat:downloadURL <https://data.insideairbnb.com/brazil/sp/s%C3%A3o-paulo/2026-09-14/data/listings.csv.gz> .
+
+ts:fuenteSMC a dcat:Dataset ;
+    dcterms:title "Cadastro dos equipamentos municipais de cultura (espaços culturais da SMC, 2024)"@es ;
+    dcterms:publisher "Prefeitura de São Paulo, Secretaría Municipal de Cultura" ;
+    dcterms:format "XLSX" ;
+    dcat:landingPage <https://dados.prefeitura.sp.gov.br/dataset/cadastro-dos-equipamentos-municipais-de-cultura2> ;
+    dcat:downloadURL <https://dados.prefeitura.sp.gov.br/dataset/ea657891-0118-4cc6-beb6-e3eeb462775c/resource/27500471-0cec-4e7a-8f63-9ce063fb30c5/download/copia_-espacos-culturais-da-smc.xlsx> .
+
+ts:fuenteOpenStreetMap a dcat:Dataset ;
+    dcterms:title "Atracciones turísticas de OpenStreetMap (consulta a Overpass API)"@es ;
+    dcterms:publisher "Colaboradores de OpenStreetMap" ;
+    dcterms:format "JSON (guardado como CSV)" ;
+    dcterms:license <https://www.openstreetmap.org/copyright> ;
+    dcat:landingPage <https://overpass-turbo.eu/> ;
+    dcat:accessURL <https://overpass-api.de/api/interpreter> .
+
+ts:fuenteDistritos a dcat:Dataset ;
+    dcterms:title "Distritos del municipio de São Paulo (capa de apoyo)"@es ;
+    dcterms:publisher "Prefeitura de São Paulo" ;
+    dcterms:format "Shapefile (layerdistrito.zip)" ;
+    dcat:landingPage <https://dados.prefeitura.sp.gov.br/dataset/distritos> .
