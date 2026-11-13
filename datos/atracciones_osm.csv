@@ -1,0 +1,634 @@
+osm_tipo,osm_id,tourism,nombre,lat,lon,calle,barrio,sitio_web,horario,wikidata
+node,60641425,attraction,,-23.5567794,-46.6351573,,,,,
+node,394684228,museum,Museu de Geociências,-23.5620094,-46.7274438,,,,,Q10333831
+node,394684229,museum,Museu de Oceanografia,-23.5610812,-46.7314694,,,,,Q30937692
+node,394941432,museum,Museu do Crime,-23.5668026,-46.7131835,,,,,Q10333709
+node,407228888,museum,Museu de Anatomia,-23.5656807,-46.7395947,,,,,
+node,407242760,museum,Museu de Arqueologia e Etnologia,-23.5594339,-46.7419293,,,,,Q2046360
+node,760105496,theme_park,Aquario,-23.5724728,-46.445368,,,,,
+node,874860436,attraction,Praça Vital Brasil,-23.5643106,-46.7198286,,,,,
+node,917097368,museum,"""Mugeo"" Valdemar Lefèvre",-23.532289,-46.6710374,,,,,
+node,925979576,museum,Casa do Bandeirante,-23.5612182,-46.7096155,,,,,Q9698690
+node,1180813951,attraction,Ghost Bike Márcia Prado,-23.5640604,-46.6530194,,,,,
+node,1685187753,artwork,Centro de Eventos Vila Mariana,-23.5915401,-46.6345871,,,,,
+node,1770102280,museum,Museu do Futebol,-23.5474227,-46.6654699,Praça Charles Miller,Pacaembu,https://www.museudofutebol.org.br/,Tu-Su 09:00-17:00; PH 10:00-17:00; Mo off; PH Mo off,Q2356412
+node,2081876309,artwork,Fauno,-23.5621635,-46.6569597,,,,,Q45319916
+node,2081876311,artwork,Joaquim Eugenio de Lima,-23.5618685,-46.6567724,,,,,Q44992137
+node,2135983920,artwork,Marco zero da cidade de São Paulo,-23.5503953,-46.6339471,,,,,Q10325364
+node,2197550244,viewpoint,Mirador Pedra Grande,-23.4363627,-46.6352132,,,,,
+node,2355019428,artwork,Santos-Dumont 14-bis,-23.5144047,-46.6294409,,,,,
+node,2418740022,viewpoint,,-23.6398318,-46.6194053,,,,,
+node,2428171753,artwork,,-23.5222229,-46.6960425,,,,,
+node,2428249758,artwork,,-23.5266319,-46.6817436,,,,,
+node,2428250462,viewpoint,Bourbom,-23.5259736,-46.6812608,,,,,
+node,2428262106,viewpoint,,-23.4575407,-46.7658073,,,,,
+node,2634256028,attraction,Viaduto do Chá,-23.5465818,-46.6379543,,,https://www.saopaulo.sp.gov.br/conhecasp/turismo_pontos-turisticos_viaduto-do-cha,,Q7924455
+node,2812210894,museum,Museu de Arte Moderna de São Paulo,-23.5880162,-46.655484,,,https://www.mam.org.br/,Tu-Su 10:00-18:00,Q1581634
+node,3019231196,artwork,Monumento a Armando de Sales Oliveira,-23.5649592,-46.7130702,Praça Professor Reinaldo Porchat de Assis,,,,
+node,3273658965,artwork,Mão,-23.5273126,-46.6653295,,,https://memorial.org.br/acervo/obras-de-arte/mao/,,Q44993741
+node,3375718988,artwork,Condor,-23.5508437,-46.6329208,,,,,Q45052169
+node,3404838226,artwork,Monumento Amizade Sírio Libanesa,-23.5453181,-46.6317793,,,,,Q44996170
+node,3679337228,attraction,Chamine da Usina de Luz Elétrica,-23.5327164,-46.6312408,Rua João Teodoro,Luz,,,
+node,3853331529,attraction,Cachoeira do Sagui,-23.9453557,-46.7211165,,,,,
+node,3893660656,museum,A CASA,-23.5604107,-46.6941957,Avenida Pedroso de Morais,,https://www.acasa.org.br/,Tu-Su 11:00-19:00,Q30938319
+node,3978732625,attraction,Museu de Rua,-23.56579,-46.7195886,Avenida Vital Brasil,,,Mo-Su 07:00-18:00,
+node,3994065857,artwork,Sem título 2008,-23.5589589,-46.7293739,,,https://www.fea.usp.br/fea/noticias/fea-x-fea-arte-de-tomie-ohtake-homenagem-ao-passado-e-celebracao-do-futuro-da-fea,,
+node,4029947014,artwork,,-23.5643094,-46.7411656,,,,,
+node,4030003814,artwork,,-23.564629,-46.7403541,,,,,
+node,4041217309,artwork,Monumento à amizade entre Brasil e Japão,-23.5628724,-46.7207978,,,,,Q45262475
+node,4041877220,attraction,Tapete de asfalto,-23.5291001,-46.6911037,,,,,
+node,4049734427,artwork,,-23.5579786,-46.7268513,,,,,Q51727131
+node,4049734428,artwork,,-23.5583142,-46.7270139,,,,,
+node,4058998775,artwork,Ultramarinho,-23.5602307,-46.7223527,,,,,Q51727082
+node,4087455006,artwork,,-23.558692,-46.7259132,,,https://www.jornaldocampus.usp.br/index.php/2009/09/mais-que-um-relogio/,,
+node,4103934090,museum,Casa de Cultura de Santo Amaro,-23.6467014,-46.708458,,,,,
+node,4240267806,attraction,,-23.5446493,-46.6284915,,,,,
+node,4272498210,artwork,Estátua de Anhanguera,-23.5617858,-46.6562454,,,,,Q44952522
+node,4369006877,gallery,Galeria White Cube,-23.5995103,-46.6499074,,,,,
+node,4376089171,museum,Instituto Bardi,-23.6129834,-46.7118386,Rua General Américo de Moura,Morumbi,http://institutobardi.com.br,"Th-Sa 10:00-15:30; PH off; ""by appointment""",Q28105029
+node,4385662275,attraction,Ponte Estaiada,-23.6127112,-46.6989359,,,,,Q1075303
+node,4398955701,artwork,Choque Cultural Art Gallery,-23.5555041,-46.6856275,,,,,
+node,4400266489,artwork,Escadaria Do Patapio,-23.5552427,-46.6854121,,,,,
+node,4467659990,museum,Estúdio Lâmina,-23.5451244,-46.6349531,Avenida São João,,,,
+node,4479245332,artwork,,-23.5274384,-46.6663613,,,,,
+node,4536471385,viewpoint,Edifício Itália,-23.54531,-46.6435216,,,,,
+node,4537622890,attraction,Freddy's Place,-23.6116417,-46.678769,Avenida Portugal,,,,
+node,4552554789,museum,Chácara Lane,-23.5483957,-46.6510315,Rua da Consolação,,https://www.museudacidade.sp.gov.br/chacaralane.php,,
+node,4577562006,attraction,Igreja Missionarica IDE,-23.4920245,-46.4014605,Rua Bernardo de Chaves Cabral,,,,
+node,4581538515,attraction,,-23.584122,-46.6607804,,,,,
+node,4601779990,museum,Memorial da pessoa com deficiência,-23.5268281,-46.6634804,,,,,Q30937723
+node,4640796824,artwork,Monumento 80 anos da Imigração Japonesa,-23.5707301,-46.6409248,,,,,Q45224208
+node,4686081365,museum,Museu de Arte Contemporânea da Universidade de São Paulo,-23.5597692,-46.7220744,,,http://www.mac.usp.br/,,Q2557770
+node,4686956920,aquarium,Aquário do Centro,-23.5487701,-46.6404442,Rua João Adolfo,,,,
+node,4732250495,theme_park,Parque da Mônica,-23.6771412,-46.6990811,,,https://parquedamonica.com.br/,,Q10345444
+node,4775610124,artwork,,-23.5552183,-46.6855703,,,,,
+node,4897257221,artwork,Apóstolo Paulo,-23.5501346,-46.6338039,,,,,Q45052087
+node,4922707321,museum,Prandiano,-23.580683,-46.6355384,Rua Gaspar Lourenço,,,,
+node,4964023952,artwork,Painel do Edifício Nações Unidas,-23.5671328,-46.6493246,Avenida Paulista,,,,Q10343598
+node,4964274008,viewpoint,Belvedere Avanhandava,-23.5513681,-46.6477277,,,https://pt.foursquare.com/v/belvedere-avanhandava-escadarias-entre-ruas-frei-caneca-e-avanhandava/4fb97da9e4b036f8b0fd56b0,,
+node,4973028945,museum,Centro Cultural Banco do Brasil São Paulo,-23.5475552,-46.6346871,Rua Álvares Penteado,,,We-Mo 09:00-21:00,Q26869711
+node,4983916824,artwork,Drusas,-23.5453719,-46.6364334,,,http://www.monumentos.art.br/monumento/drusas,,Q43330334
+node,4983985824,artwork,Mário de Andrade,-23.5475417,-46.6417903,,,,,Q45320138
+node,4987322723,attraction,Beco do Batman,-23.5564923,-46.6866662,,,,,Q18932366
+node,4991311321,artwork,Mural Roy Lichenstein,-23.5357946,-46.6337563,,,,,
+node,4998244123,artwork,Festival O.bra,-23.5421901,-46.6340267,,,,,
+node,5000311322,artwork,Busto Dr. Arnaldo Vieira de Carvalho,-23.554923,-46.66999,,,,,
+node,5003403761,museum,,-23.5373277,-46.605613,,,,,
+node,5004199220,artwork,Adolpho Lutz,-23.5552944,-46.6688037,,,,,
+node,5034585047,artwork,Marco da Paz,-23.5477512,-46.6330413,,,,,
+node,5056306621,museum,Baro Galeria,-23.5619768,-46.6694892,Rua da Consolação,,,,
+node,5058261758,gallery,Arte brasileira,-23.5599405,-46.6704572,Alameda Lorena,,,,
+node,5129855297,attraction,Mercado Municipal Kinjo Yamato,-23.5408277,-46.629798,Rua da Cantareira,Centro Histórico,,Mo-Sa 03:00-15:00,
+node,5133933521,attraction,Ayrton Senna Túmulo,-23.626877,-46.7255118,,,,,
+node,5137272122,attraction,Zebra Car,-23.5600897,-46.6880149,Rua Padre João Gonçalves,,,,
+node,5137272123,attraction,Beco do Aprendiz,-23.5600791,-46.6875405,Beco do Aprendiz,Vila Madalena,,,
+node,5198946981,attraction,Escada do Bixiga,-23.5599601,-46.6465427,,,,,Q42407678
+node,5224038223,artwork,Busto de André Franco Montoro,-23.5263733,-46.6642982,,,,,
+node,5225668236,artwork,A Leitura,-23.5473495,-46.6418722,,,,,Q47487343
+node,5239368342,viewpoint,,-23.4544119,-46.7665814,,,,,
+node,5262865756,artwork,Bandeira do Brasil,-23.6885995,-46.6994105,,,,,
+node,5280487724,attraction,Cabeceira de Congonhas,-23.619655,-46.66129,Viaduto João Julião da Costa Aguiar,,,24/7,
+node,5284678066,attraction,Nascente do Mongaguá,-23.5052231,-46.475899,,,,,
+node,5294409425,attraction,Ó do Borogodó samba,-23.5601965,-46.6862159,Rua Horácio Lane,,,20:00-01:00,
+node,5370425694,artwork,Startrooper,-23.5736609,-46.6501707,,,,,
+node,5370434343,artwork,Dark Cowboy,-23.5736748,-46.6501786,,,,,
+node,5370435581,artwork,Princesa Leia.,-23.5736804,-46.6501873,,,,,
+node,5370437555,artwork,Young Luke Skywalker.,-23.5736865,-46.6501947,,,,,
+node,5370466775,artwork,Vote em Al Sapone,-23.5737583,-46.6502139,,,,,
+node,5370469904,artwork,Turtle surrounded by pink ocean,-23.5737251,-46.6502267,,,,,
+node,5370470959,artwork,Existe amor em SP,-23.5737337,-46.6502325,,,,,
+node,5370512043,artwork,Monalisa do Funk,-23.573754,-46.6502349,,,,,
+node,5370513730,artwork,Bonequinha de Luxo,-23.5737294,-46.650208,,,,,
+node,5370514549,artwork,The Joker,-23.5737433,-46.6502255,,,,,
+node,5370517893,artwork,Gol na B**** do Povo,-23.5737669,-46.650229,,,,,
+node,5370518357,artwork,Pandora de políticos,-23.5737701,-46.6502454,,,,,
+node,5420801322,artwork,Mãe Universo,-23.5684631,-46.6439117,,,,,
+node,5509051977,viewpoint,"""Lice Hill""",-23.6561259,-46.7783309,,,,,
+node,5509052019,artwork,,-23.6538379,-46.7781317,,,,,
+node,5512350626,attraction,Místicas,-23.6682196,-46.7320439,,,,,
+node,5585357421,attraction,Casa de Pedra,-23.6160318,-46.7220793,Rua Herbert Spencer,Paraisópolis,,,
+node,5602604506,museum,Museu Florestal Octávio Vecchi,-23.4571159,-46.6363921,,,,,Q30884316
+node,5607306921,artwork,Busto Dante,-23.5609843,-46.7226788,,,,,
+node,5620416668,attraction,Santos FC Business Center,-23.5426269,-46.6649508,Avenida Pacaembu,Pacaembu,https://www.santosfc.com.br/,08:00-22:00,Q80955
+node,5625838087,artwork,,-23.6284136,-46.6245121,,,,,
+node,5625838088,artwork,,-23.6265128,-46.6168007,,,,,
+node,5627377671,gallery,Galeria Jaqueline Martins,-23.545799,-46.648837,,,,,
+node,5628334980,museum,Tattoo Museum,-23.5433106,-46.6404463,,,,,Q55154531
+node,5629805264,attraction,Cachoeira do Jamil,-23.9393903,-46.6558339,,,,,
+node,5629809932,attraction,Cachoeira da Usina,-23.9645163,-46.6588876,,,,,
+node,5629835308,attraction,Cachoeira do Marsilac,-23.9420708,-46.6905808,,,,,
+node,5646851035,museum,Museus de Arte Brasileira da FAAP,-23.5450801,-46.6627025,Rua Alagoas,,,,Q10333751
+node,5808186573,attraction,Yatch Club,-23.5594023,-46.6462249,Rua Treze de Maio,,,We-Sa 23:30-06:00,
+node,5849134407,attraction,Oratório Nossa Senhora de Fátima,-23.7268404,-46.7035033,Rua Antônio Pereira Taques,Jardim Iporanga,https://diocesedesantoamaro.org.br/,,
+node,6102799985,gallery,Galeria de Arte André,-23.5624281,-46.6747086,Rua Estados Unidos,,,,
+node,6150347921,artwork,,-23.5689397,-46.6546622,,,,,
+node,6285153611,attraction,Locomotiva Jiboia,-23.5449019,-46.627586,,,,,Q61750201
+node,6285153649,attraction,Locomotiva Elétrica MK 1 C + C - 1,-23.5442968,-46.6286118,,,,,Q61750177
+node,6285153650,attraction,,-23.5440592,-46.6286165,,,,,
+node,6357370285,attraction,Casa Barbosa,-23.5605075,-46.6450631,Rua Rui Barbosa,,,,
+node,6389134263,museum,Museu do Tribunal de Justiça SP,-23.5537763,-46.6321281,Rua Conde de Sarzedas,,,,Q30939729
+node,6417208740,viewpoint,,-23.4587073,-46.7666224,,,,,
+node,6463727185,museum,Galeria Melissa Sao Paulo,-23.5636108,-46.6686021,Rua Oscar Freire,,http://melissa.co.br,,
+node,6489554962,artwork,A Construção,-23.5590835,-46.7254825,,,,,Q124005936
+node,6556178098,attraction,Casa Mal Assombrada,-23.8641922,-46.674158,Estrada José Cruz,Nova America,,,
+node,6579410093,artwork,Diálogo,-23.5510877,-46.6333513,,,,,Q44991915
+node,6579434757,artwork,Totem da Sé,-23.5508384,-46.6337875,,,,,Q44996245
+node,6579435978,artwork,Emblema de São Paulo,-23.5503166,-46.6327537,,,,,Q45052180
+node,6579436729,artwork,Voo,-23.5505505,-46.632605,,,,,Q45052230
+node,6579472791,artwork,Impacto,-23.5510777,-46.6337146,,,,,Q45052188
+node,6579476726,artwork,Satélite,-23.5516624,-46.6326559,,,,,Q45052210
+node,6579491944,artwork,Espaço Cósmico,-23.5511455,-46.6330925,,,,,Q44991996
+node,6579501095,artwork,Abertura,-23.550307,-46.6332494,,,,,Q45052162
+node,6585818830,artwork,José de Anchieta,-23.5496063,-46.6335663,,,,,Q45052128
+node,6638653999,attraction,Conservatório Dramatico e Musical de São Paulo,-23.5443931,-46.6371802,,,,,
+node,6638654000,attraction,Escola De Dança do Theatro Municipal de São Paulo,-23.5444326,-46.6371001,,,,,
+node,6638654001,museum,Fundação Fernando Henrique Cardoso,-23.5453813,-46.6372948,,,,,
+node,6638654002,museum,Praça das Artes,-23.5443176,-46.6373301,Avenida São João,,,Mo-Sa 07:00-20:00,
+node,6638654003,attraction,Praça das Artes,-23.5448051,-46.6371093,,,,,
+node,6665733084,gallery,Eduardo Fernandes,-23.5565493,-46.6871667,Rua Harmonia,,,,
+node,6680897194,artwork,,-23.5697067,-46.646749,,,,,
+node,6680910805,artwork,Sem título,-23.5705143,-46.644464,,,,,
+node,6680911371,artwork,,-23.6213738,-46.6984009,,,,,
+node,6704391454,artwork,Laocoonte Replica,-23.5833317,-46.6621603,,,,,
+node,6760644813,museum,Museu da Imprensa Automotiva (MIAU),-23.5301428,-46.6936905,Rua Marcelina,Vila Romana,http://www.miaumuseu.com.br/,,
+node,6775146969,artwork,,-23.5380419,-46.6711772,,,,,
+node,7034559085,viewpoint,,-23.5426217,-46.6398064,,,,,
+node,7042949988,attraction,Bairro Oriental,-23.5556815,-46.6352533,,,,,
+node,7169682193,attraction,Praça Doutor Cipriano de Moraes,-23.5371176,-46.7075661,Praça,,,,
+node,7257951688,museum,Museu do Crime,-23.5367387,-46.6359105,Avenida Cásper Líbero,,,,Q20058891
+node,7360462686,museum,Farol Santander São Paulo,-23.5458386,-46.6341588,,,https://www.farolsantander.com.br/,,
+node,7405697838,attraction,Locomotiva a vapor DÜBS,-23.5447611,-46.6270266,,,,,Q61750192
+node,7543425137,artwork,Mulher descansando na Praça Agua Branca,-23.5130077,-46.686847,,,,,
+node,7543503441,artwork,GRAFITE MENINA NATHCATIVA,-23.5127593,-46.6866961,,,,,
+node,7543503442,artwork,GRAFITE MENINA NATHCATIVA,-23.5127624,-46.6867095,,,,,
+node,7543503443,artwork,Grafite Menina Nathcativa,-23.512774,-46.6867008,,,,,
+node,7563454647,gallery,ArtShot,-23.5554436,-46.6880145,Rua Harmonia,,,,
+node,7689679803,artwork,Independência ou Morte,-23.5855037,-46.6097229,,,,,Q10301958
+node,7701027562,artwork,São Paulo em 1841,-23.5856075,-46.6102524,,,,,Q52637869
+node,7706146535,artwork,Raposo Tavares,-23.5854955,-46.6096164,,,,,Q52704042
+node,7706146536,artwork,Fernão Dias,-23.5855127,-46.609829,,,,,Q52704155
+node,7706363320,artwork,Dom Pedro I,-23.5856467,-46.6097093,,,,,Q53281630
+node,7712021167,artwork,O ET e o Skatista,-23.6459487,-46.5909202,,,,,
+node,7786842834,artwork,,-23.585657,-46.6096188,,,,,Q52704370
+node,7786842841,artwork,Ânforas de cristal,-23.5855829,-46.6097335,,,,,Q52704370
+node,7792639186,artwork,Fundação da Cidade de São Paulo,-23.5856055,-46.6102092,,,,,Q42573217
+node,7792639187,artwork,Retrato do Brigadeiro Bernardo José Pinto Peixoto,-23.5855588,-46.6102622,,,,,Q59925140
+node,7792639188,artwork,Retrato do Conselheiro Bernardo A. Gavião Peixoto,-23.5855806,-46.6103044,,,,,Q52302076
+node,7792639189,artwork,Retrato de Anchieta,-23.5856267,-46.6102991,,,,,Q42714041
+node,7792639190,artwork,João Ramalho e Filho,-23.5855545,-46.609623,,,,,Q55852290
+node,7792639191,artwork,Cacique Tibiriçá e neto,-23.58557,-46.6098176,,,,,Q56100974
+node,7792657875,artwork,Retrato de Maria Quitéria de Jesus Medeiros,-23.5855084,-46.6097908,,,,,Q42713786
+node,7792657876,artwork,Retrato de Joaquim Gonçalves Ledo,-23.5854476,-46.609653,,,,,Q42714075
+node,7792657877,artwork,Retrato de José Bonifácio de Andrada e Silva,-23.5854534,-46.6096141,,,,,Q42714094
+node,7792657878,artwork,Retrato do Padre Diogo Antônio Feijó,-23.5854808,-46.6096104,,,,,Q42714128
+node,7792657879,artwork,Retrato de Dona Leopoldina de Habsburgo e seus filhos,-23.5854574,-46.6097961,,,,,Q42713734
+node,7792657880,artwork,Príncipe Regente Dom Pedro e Jorge de Avilez a Bordo da Fragata União,-23.5854746,-46.6098414,,,,,Q43350568
+node,7792657881,artwork,Retrato de José Clemente Pereira,-23.5854519,-46.6097294,,,,,Q42714105
+node,7792657882,artwork,Retrato de D. Pedro I,-23.5854989,-46.609838,,,,,Q42714057
+node,7792657883,artwork,Sessão das Cortes de Lisboa,-23.5854958,-46.6096476,,,,,Q42714139
+node,7792677337,artwork,"Pouso no Sertão - Queimada, 1826",-23.5855364,-46.6094662,,,,,Q52302316
+node,7792677338,artwork,"Pouso no Sertão - Queimada, 1826",-23.5855578,-46.6095014,,,,,Q52302316
+node,7792677339,artwork,Partida de Porto Feliz,-23.5855853,-46.6094985,,,,,Q52302292
+node,7792677340,artwork,Bênção dos canoões (Porto Feliz),-23.5856137,-46.6094956,,,,,Q52302307
+node,7792677341,artwork,9º Encontro de Monções no Sertão,-23.5856223,-46.6094568,,,,,Q42713961
+node,7792677342,artwork,Carga de Canoas,-23.58561,-46.6094183,,,,,Q42713985
+node,7792677343,artwork,A Conversão de São Paulo a Caminho de Damasco,-23.5855799,-46.6094221,,,,,Q56072870
+node,7792677344,artwork,Caboclas no sertão do Tietê,-23.5855516,-46.609425,,,,,Q55511319
+node,7792719908,artwork,"Roteiro da Viagem de D. Luiz e Sespedes Xerias, Ao Guairá, Via S. Paulo (Colonial)",-23.5855742,-46.6095675,,,,,Q55210210
+node,7792719909,artwork,Retrato de José Bonifácio de Andrada e Silva,-23.5855985,-46.6095811,,,,,Q52302043
+node,7792719910,artwork,Fundação de São Vicente,-23.5856292,-46.609578,,,,,Q42532188
+node,7792719911,artwork,Retrato do Padre José de Anchieta,-23.5856439,-46.6095432,,,,,Q42713920
+node,7792719912,artwork,Domingos Jorge Velho,-23.5856231,-46.609513,,,,,Q42541360
+node,7792719913,artwork,Retrato de Dom Pedro I,-23.5855939,-46.6095155,,,,,Q52302063
+node,7792719914,artwork,Carta Geral das Bandeiras Paulistas,-23.5855713,-46.6095304,,,,,Q86255905
+node,7792739423,artwork,"Largo do Rosário em Santos, 1850",-23.585547,-46.6095231,,,,,Q52302169
+node,7792739424,artwork,Retrato do Padre Bartolomeu Lourenço de Gusmão,-23.5855628,-46.6095737,,,,,Q42713914
+node,7792739425,artwork,Matriz Colonial de Santos,-23.5855272,-46.6095868,,,,,Q42713877
+node,7792740413,artwork,"Vista de Cubatão, 1826",-23.5857079,-46.6096769,,,,,Q42713942
+node,7792740414,artwork,"Pelourinho e arsenal da Marinha em Santos, 1850",-23.5856982,-46.6097315,,,,,Q42713908
+node,7792740415,artwork,"Panorama de Santos, 1822",-23.5856711,-46.6097189,,,,,Q42713891
+node,7792740416,artwork,"Convento de Itanhaém, 1884",-23.5856827,-46.6097329,,,,,Q52302383
+node,7792740417,artwork,"Antigo Páteo da Cadeia de Santos, 1875",-23.5857134,-46.6097303,,,,,Q42713835
+node,7792740418,artwork,Hospital e Igreja da Misericórdia de Santos,-23.5857277,-46.6097291,,,,,Q42713855
+node,7792740419,artwork,"Páteo Interno da cadeia de Santos, 1854",-23.5857341,-46.6097009,,,,,Q42713899
+node,7792740420,artwork,"Moagem de Cana - Fazenda Cachoeira - Campinas, 1830",-23.5857225,-46.6096753,,,,,Q42713883
+node,7792740421,artwork,"Cena do Porto de Santos, 1826",-23.5856925,-46.6096788,,,,,Q52302434
+node,7792740422,artwork,"Casas Velhas de Santos, 1826",-23.5856753,-46.6096808,,,,,Q41722891
+node,7792740423,artwork,"Calçada de Lorena, 1826",-23.5856679,-46.6096966,,,,,Q42713976
+node,7792766796,artwork,"Fazenda da Barra - Campinas, 1840",-23.585662,-46.6096242,,,,,Q42713583
+node,7792766797,artwork,Combate de Botocudos em Mogi das Cruzes,-23.5857069,-46.6096659,,,,,Q42714002
+node,7792766798,artwork,Construção de Açude - Fazenda Cachoeira - Campinas,-23.5857008,-46.6095851,,,,,Q42713563
+node,7792766799,artwork,Fazenda de Café do Vale do Paraíba,-23.5857274,-46.6096322,,,,,Q42713851
+node,7792766800,artwork,Monjolo de Rabo em Campinas,-23.5856605,-46.609608,,,,,Q42713611
+node,7792766801,artwork,"Igreja de Santo Antonio, 1826",-23.5856636,-46.6096423,,,,,Q41722942
+node,7792766802,artwork,Desembarque de Pedro Álvares Cabral em Porto Seguro em 1500,-23.5856651,-46.6096593,,,,,Q24284124
+node,7792766803,artwork,"Paulistas Antigos, 1825",-23.5856745,-46.6096687,,,,,Q41723206
+node,7792766804,artwork,"Tríptico: Cavalhadas em Sorocaba - Alcância das Canas, Desfile de Cristãos e Mouros, Argolinha",-23.5856913,-46.6096675,,,,,Q42713633
+node,7792766805,artwork,"Fazenda Soledade - Campinas, 1830",-23.5857215,-46.609664,,,,,Q42713591
+node,7792766806,artwork,Soldado da Legião Paulista na Cisplatina e Gaúcho,-23.5857295,-46.609656,,,,,Q41723350
+node,7792766807,artwork,Monjolo Comum - Primórdios da Lavoura Paulista,-23.5857264,-46.6096163,,,,,Q42713606
+node,7792766808,artwork,"Volta do Eito - Fazenda Cachoeira, 1840",-23.5857243,-46.6095943,,,,,Q52302560
+node,7792766809,artwork,"Carretão para beneficiar café - Campinas, 1850",-23.5857137,-46.6095838,,,,,Q42713556
+node,7792766810,artwork,"Dama Paulista, 1808",-23.5856837,-46.6095869,,,,,Q41722917
+node,7792766811,artwork,Monjolo de Rabo em Campinas,-23.5856679,-46.6095885,,,,,Q42713611
+node,7792821079,artwork,Igreja e Páteo da Misericórdia,-23.5855197,-46.6095908,,,,,Q41722967
+node,7792821080,artwork,"Pateo do Colégio, 1858",-23.5855461,-46.6095874,,,,,Q41723157
+node,7792821081,artwork,"Várzea do Carmo e Rio Tamanduateí, 1858",-23.5855634,-46.6095698,,,,,Q41723412
+node,7792821082,artwork,"Páteo da Sé e Igreja de São Pedro, 1858",-23.5855611,-46.6095355,,,,,Q55852276
+node,7792821083,artwork,"Largo e Mosteiro de São Bento, 1830",-23.5855439,-46.6095192,,,,,Q41723019
+node,7792821084,artwork,"Rua do Rosário, 1858",-23.5855203,-46.6095214,,,,,Q41723323
+node,7792840185,artwork,"Paço Municipal, 1628",-23.5854903,-46.6095415,,,,,Q41723086
+node,7792840186,artwork,Inundação da Várzea do Carmo,-23.5854935,-46.6095775,,,,,Q42441056
+node,7990196357,artwork,,-23.6528278,-46.6781869,,,,,
+node,8022374169,gallery,GMOArts,-23.4988902,-46.6171265,,,,,
+node,8181059204,viewpoint,Mirante do Bruno,-23.5019645,-46.6986717,,,,,
+node,8232422716,viewpoint,Mirante Ibirapuera,-23.6611033,-46.7305237,,,,,
+node,8695287975,attraction,Mirante do Jaguaré,-23.5429876,-46.7443568,,,,,Q44993892
+node,8750941729,artwork,"""O ancião é o nosso livro""",-23.5520937,-46.6576753,,,,,
+node,8750952824,artwork,Memorial da Fé,-23.5576689,-46.6821801,,,,,
+node,8750952825,artwork,Homenagem à Cruz Vermelha,-23.6124973,-46.6563178,,,,,
+node,8750952826,artwork,Mural no Hospital das Clínicas,-23.5548889,-46.6708738,,,,,
+node,8991448772,attraction,Cachoeira da Onça,-23.9320121,-46.6694275,,,,,
+node,9017110917,viewpoint,Sampa Sky,-23.5421507,-46.63578,,,,,
+node,9054720039,artwork,My heart beats like yours,-23.5436236,-46.6426339,,,,,
+node,9138572875,artwork,Atelier Giane Barros,-23.6147405,-46.6886934,Rua Pitu,Brooklin,,,
+node,9151318217,viewpoint,,-23.5705172,-46.6456499,,,,,
+node,9216943817,attraction,Preguiça-real,-23.6494272,-46.6199247,,,,,
+node,9223973118,artwork,Aretuza,-23.5621318,-46.6572552,,,,,Q44952534
+node,9397779866,viewpoint,,-23.5621981,-46.6514574,,,,,
+node,9693541981,artwork,Cristo Redentor,-23.6183589,-46.6099407,,,,,Q45319707
+node,9807651221,artwork,,-23.5937626,-46.665209,,,,,
+node,9807651222,artwork,,-23.5938428,-46.6652055,,,,,
+node,9969076355,attraction,Bourbon Street Music Club,-23.612653,-46.6689505,Rua dos Chanés,Indianópolis,https://www.bourbonstreet.com.br,Tu-Su 19:30-02:00,
+node,9997496908,artwork,Indio Ubirajara,-23.545736,-46.5922088,,,,,Q45319882
+node,10046395087,viewpoint,Terraço Itália,-23.5457574,-46.6436502,,,,,
+node,10067423188,gallery,Val Santinho,-23.562683,-46.6664682,Rua Haddock Lobo,,,,
+node,10209620370,artwork,Porquinho,-23.5919965,-46.6600453,,,,,
+node,10209620371,attraction,Ponte Metálica do Ibirapuera,-23.5870141,-46.6595999,,,,,
+node,10247962172,viewpoint,,-23.5402665,-46.6858956,,,,,
+node,10247981622,viewpoint,,-23.5434964,-46.6893256,,,,,
+node,10247981623,viewpoint,,-23.5402975,-46.6885874,,,,,
+node,10247981624,viewpoint,,-23.5393358,-46.6944412,,,,,
+node,10914296457,gallery,Ponto das Artes,-23.5619522,-46.6872253,,,,,
+node,11035175464,artwork,Para o jornal Estado de São Paulo,-23.5483136,-46.6428755,,,,,
+node,11038572500,artwork,Homens trabalhando,-23.5489547,-46.634619,,,,,
+node,11038605994,artwork,Teatro,-23.5493452,-46.6458448,,,,,
+node,11164225799,attraction,Antiga Pedreira,-23.4585556,-46.7899763,,,,,
+node,11182183833,viewpoint,,-23.4541874,-46.797606,,,,,
+node,11182183834,viewpoint,,-23.4580382,-46.7927243,,,,,
+node,11215814105,museum,Memorial da Resistência de São Paulo,-23.5347933,-46.6391162,Largo General Osório,Santa Efigênia,https://memorialdaresistenciasp.org.br,Mo-Su 10:00-18:00; Tu off,Q10328557
+node,11375904927,attraction,Macacos,-23.5798315,-46.7299544,,,,,
+node,11375920454,viewpoint,,-23.5540058,-46.7023547,,,,,
+node,11394310889,museum,Museu Xingu,-23.5664017,-46.6592644,,,,,Q45342571
+node,11408639240,viewpoint,Mirante para o Rodoanel Norte,-23.4508082,-46.6679895,,,,,
+node,11514869771,artwork,Rinoceronte,-23.5090048,-46.6841542,,,,,
+node,11572527888,gallery,Dr Arnaldo,-23.5553466,-46.6672662,,,,,
+node,11580780896,attraction,Fábrica Abandonada de Cimento Portland,-23.4017699,-46.759362,,,,,Q18462357
+node,11580780897,attraction,Capela de São José Operário,-23.401857,-46.7640626,,,,,
+node,11617289795,attraction,Madame Underground Club,-23.5595857,-46.6440728,Rua Conselheiro Ramalho,Bela Vista,,Fr-Su 22:00-03:00,
+node,11704381932,gallery,Galeria Ponto das Artes,-23.5565941,-46.657745,Rua Antônio Carlos,,https://www.galeriapontodasartes.com.br/,Mo-Fr 10:00-18:00,
+node,11721384417,artwork,,-23.5501584,-46.6547576,,,,,
+node,11729137263,artwork,,-23.7032689,-46.6970312,,,,,
+node,11729137264,artwork,,-23.7038869,-46.6972018,,,,,
+node,11729137265,artwork,,-23.7037663,-46.6974646,,,,,
+node,11729137266,artwork,,-23.7046489,-46.6971087,,,,,
+node,11729137267,artwork,,-23.7045249,-46.6973776,,,,,
+node,11729137268,artwork,,-23.7044045,-46.6976418,,,,,
+node,11729157769,artwork,,-23.7042873,-46.6978933,,,,,
+node,11780029802,theme_park,Morumbi Park,-23.6273206,-46.7171871,Marginal Pinheiros (Local),Morumbi,https://www.morumbipark.com.br/,We-Fr 12:00-20:00; Sa 12:00-22:00; Su 10:00-20:00,
+node,11780048307,viewpoint,Mirante da Coca-Cola,-23.6307313,-46.7186048,,,,,
+node,11794759002,artwork,,-23.5496932,-46.6647105,,,,,
+node,11805525378,artwork,,-23.5570527,-46.7342503,,,,,
+node,11813892641,gallery,,-23.5621194,-46.668033,,,,,
+node,11835618019,artwork,Mãe,-23.5454154,-46.6590561,Rua Piauí,,,,
+node,11836044598,attraction,Eu Amo Mooca,-23.5521971,-46.6096738,,,,,
+node,11837431621,artwork,Emigrantes,-23.5459532,-46.6586858,,,,,
+node,11837431622,artwork,Homenagem ao tango,-23.5460968,-46.6583684,,,,,
+node,11837431623,artwork,Nascer,-23.5459496,-46.65818,,,,,
+node,11837431625,artwork,Leão lutando com uma serpente,-23.5456065,-46.6579616,,,,,
+node,11933975213,attraction,Pedra da Baleia,-23.4536985,-46.7232478,,,,,
+node,11980088019,attraction,Inner Club,-23.6272622,-46.6993379,,,,,
+node,11980197743,attraction,Villa Imperium,-23.607705,-46.6531402,,,,,
+node,11980218968,attraction,Hot Bar,-23.6117565,-46.6681217,,,,,
+node,11980229489,attraction,57 House Club,-23.6134966,-46.6622403,,,,,
+node,11980252471,attraction,Brooklin Club,-23.6138345,-46.6789149,,,,,
+node,11980252928,attraction,Spicy Club,-23.6113897,-46.6681733,,,,,
+node,11980277852,attraction,Club A,-23.6157245,-46.6647028,Alameda dos Aicás,,https://eventos.cluba.com.br/,,
+node,11999262269,gallery,Galeria Marta Tabra de Arte Latino-Americana,-23.5271309,-46.6660753,Av. Mário de Andrade,Barra Funda,https://memorial.org.br/espacos/galeria-marta-traba/,Tu-Su 10:00-17:00,
+node,12025593684,artwork,Os Inconformados,-23.5713407,-46.6913617,,,https://blog.nubank.com.br/aosinconformados/,,
+node,12025593685,artwork,O Encontro,-23.5713301,-46.6911856,,,,,
+node,12036511247,gallery,,-23.5615512,-46.6641615,,,,,
+node,12063046729,artwork,,-23.5601562,-46.7225422,,,,,
+node,12063092811,artwork,,-23.5600271,-46.7225108,,,,,
+node,12063102466,artwork,,-23.560085,-46.722417,,,,,
+node,12197770276,artwork,,-23.5622908,-46.7185129,,,,,
+node,12297317272,attraction,Distribuição de Pílulas de Frei Galvão,-23.5302755,-46.6314878,Avenida Tiradentes,Luz,,,
+node,12312510555,attraction,The History,-23.5987236,-46.6813519,,,,,
+node,12312542901,attraction,Espaço TH Eventos,-23.5986837,-46.681433,,,,,
+node,12348761791,attraction,Fonte do Cambuci,-23.5632332,-46.6205854,,,,,
+node,12382334765,museum,MUB3 - Museu da Bolsa do Brasil,-23.5465389,-46.6343986,,,https://mub3.org.br/,,
+node,12479295325,artwork,,-23.5082675,-46.6517231,,,,,
+node,12513366959,artwork,O Semeador,-23.5404692,-46.7290458,,,https://capital.sp.gov.br/web/cultura/w/patrimonio_historico/adote_obra/4532,,Q45319857
+node,12516719210,artwork,Baleia B32,-23.5897114,-46.6820165,,,,,
+node,12546680415,viewpoint,,-23.571571,-46.7012822,,,,,
+node,12649893749,artwork,,-23.6011187,-46.7107672,,,,,
+node,12877190814,gallery,Roca são Paulo gallery,-23.5647879,-46.6768585,,,,,
+node,12919021436,museum,Casa do Sítio da Ressaca,-23.650898,-46.6450648,,,,,Q16144212
+node,13099495553,museum,Museu de Meteorologia,-23.6507539,-46.6220129,Avenida Miguel Estefno,Água Funda,,Mo-Sa 09:00-16:00,
+node,13108856901,attraction,Tamanduá-bandeira,-23.6477274,-46.6198745,,,,,
+node,13111163039,artwork,Júpiter,-23.6496281,-46.622907,,,,,
+node,13111163040,artwork,Saturno,-23.649798,-46.622996,,,,,
+node,13124195153,artwork,Modelo do Sol,-23.6512301,-46.6222628,,,,,
+node,13149600510,viewpoint,Mirante para a Foz do Tiquatira,-23.5123374,-46.5478943,,,,,
+node,13162255356,viewpoint,Mirante do Trem,-23.7600001,-46.7122235,,,,,
+node,13162255358,attraction,Várzea do ribeirão da Cratera,-23.8678279,-46.6927824,,,,,
+node,13175504147,viewpoint,,-23.9063302,-46.7054804,,,,,
+node,13265603601,artwork,Espheropeia,-23.5072985,-46.6197069,,,,,Q51661128
+node,13310299105,artwork,Escultura do Curupira,-23.5672544,-46.7172971,,,,,
+node,13465119126,museum,Museu da Vacina,-23.5643639,-46.7208522,,,,,
+node,13516739401,attraction,Funilaria,-23.5605229,-46.6453071,,,,,
+node,13516915484,artwork,,-23.7279168,-46.6757318,,,,,
+node,13516915485,artwork,,-23.7280122,-46.675665,,,,,
+node,13597153128,viewpoint,Mirante Galáxia da Brasilândia,-23.4662102,-46.6990018,,,,,
+node,13631318498,attraction,"Letreiro ""Eu Amo Parelheiros""",-23.7660688,-46.7172417,,,,,
+node,13631329722,viewpoint,Mirante da Ponte Alta,-23.8997061,-46.7500718,,,,,
+node,13646940662,attraction,"Letreiro ""Cidade Tiradentes""",-23.5835958,-46.4085779,,,,,
+node,13653583816,artwork,Estátua de Santa Ana,-23.5021198,-46.6258098,,,,,
+node,13725465659,museum,,-23.5258711,-46.6835045,,,,,
+node,13726677999,artwork,João Mendes de Almeida Júnior,-23.5525743,-46.6336911,,,,,Q10311890
+node,13859220401,attraction,Entrada Núcleo Pedra Grande,-23.4590956,-46.6334596,,,,,
+node,13859546154,artwork,monumento ao rinoceronte,-23.588842,-46.7101423,,,,,
+node,13859546155,artwork,Gabião,-23.5927377,-46.7077474,,,,,
+node,13968108207,artwork,Geraldo Filme,-23.528097,-46.6611357,,,,,
+node,14104363195,attraction,Code Club,-23.5911714,-46.7306819,,,,,
+node,14144718541,artwork,,-23.5447265,-46.4706428,,,,,
+node,14144718542,artwork,,-23.5448202,-46.4706354,,,,,
+node,14144718543,artwork,,-23.544909,-46.4706088,,,,,
+node,14144718544,artwork,,-23.5449988,-46.4705992,,,,,
+node,14144718545,artwork,,-23.5450925,-46.4705971,,,,,
+node,14159120425,artwork,Os Trapalhões,-23.537552,-46.64194,,,,,
+node,14161580422,viewpoint,,-23.6151961,-46.3969441,,,,,
+node,14175223294,attraction,Palácio do Vorcaro,-23.5393787,-46.6460358,Avenida São João,República,,,
+node,14175793532,artwork,Dom Bernardino Rivadavia,-23.5454191,-46.6579794,,,,,
+node,14175817444,artwork,Prefeito Firmiano Pinto,-23.5456859,-46.6584075,,,,,
+node,14175819850,artwork,Veado lutando com três tigres,-23.5461775,-46.6581638,,,,,
+node,14175826434,artwork,Milon de Crotona,-23.5448852,-46.659291,,,,,
+node,14277418188,artwork,Leão,-23.5900298,-46.6569023,,,,,
+node,14306591502,artwork,Ayrton Senna,-23.4502298,-46.6749582,,,,,
+way,8093737,attraction,Catedral da Sé,-23.5512574,-46.6343496,Praça da Sé,Sé,http://www.catedraldase.org.br/site/,Mo-Fr 08:00-19:00; Sa 08:00-17:00; Su 08:00-18:00,Q1050668
+way,8100248,attraction,Edifício Copan,-23.5465966,-46.6444665,,,,,Q632566
+way,8105832,attraction,Estação da Luz,-23.5351033,-46.6353376,Praça da Luz,Bom Retiro,,,Q2983699
+way,27030314,museum,Pavilhão Bienal - São Paulo,-23.5884642,-46.6545909,,,,Tu-Su 10:00-21:00,Q2557770
+way,27030315,museum,Pavilhão das Culturas Brasileiras,-23.585717,-46.6598006,,,,,Q52556845
+way,27030316,museum,Museu Afro-Brasil,-23.5838946,-46.6591933,Avenida Pedro Álvares Cabral,Ibirapuera,https://museuafrobrasil.org.br/,Tu-Su 10:00-17:00,Q10333377
+way,27030317,museum,Pavilhão Japonês,-23.5860821,-46.6618099,,,https://www.bunkyo.org.br/pt-BR/pavilhao-japones,"We,Sa,Su 10:00-12:00,13:00-17:00",Q52390316
+way,33760480,museum,,-23.5890142,-46.651066,,,,,
+way,39048429,attraction,Travessa Beco do Batman,-23.5567141,-46.6863194,,,,,Q18932366
+way,39048433,attraction,Rua Gonçalo Afonso,-23.5567903,-46.6858549,,,,,Q18932366
+way,46892575,attraction,Viaduto Santa Ifigênia,-23.5428483,-46.6353707,,,,,Q5648446
+way,46927931,attraction,Teatro Municipal de São Paulo,-23.5452695,-46.6386437,Praça Ramos de Azevedo,Centro,https://www.prefeitura.sp.gov.br/cidade/secretarias/cultura/theatromunicipal/,,Q2297627
+way,46929068,attraction,Secretaria da Educação do Estado de São Paulo,-23.5442229,-46.6436572,Praça da República,,https://www.educacao.sp.gov.br/portal/institucional/a-secretaria/escola-caetano-de-campos,Mo-Fr 08:00-18:00,Q20053172
+way,51414740,attraction,Sala São Paulo,-23.5342403,-46.6398353,Praça Júlio Prestes,Campos Elíseos,https://www.salasaopaulo.art.br/,,Q3243994
+way,59432876,theme_park,Parque de Diversões Marisa,-23.5356055,-46.4534402,Rua Doutor Áureliano Barreiros,Itaquera,https://www.parquemarisa.com.br/index.asp,"Sa,Su,PH 15:00-23:00",Q10345189
+way,73947597,museum,Museu Biológico,-23.5663369,-46.7185609,Rua Emilio Ribas,,,Tu-Sa 09:00-16:45,
+way,75196540,attraction,Parque Alfredo Volpi,-23.5877334,-46.70238,,,,,Q10344857
+way,75354058,zoo,Jardim Zoológico de São Paulo,-23.6527013,-46.6181217,Avenida Miguel Estéfano,Água Funda,https://www.zoologico.com.br/,"Mo-Su,PH 09:00-18:00",Q3364798
+way,75354059,museum,Parque CienTec,-23.6516183,-46.6223992,Avenida Miguel Estefno,Água Funda,,Mo-Sa 09:00-16:00,Q53588580
+way,75488634,attraction,Praça da Sé,-23.5504435,-46.6331172,,,,,Q2880208
+way,75490085,attraction,Palácio dos Bandeirantes,-23.6015315,-46.7117233,Avenida Morumbi,Morumbi,https://www.saopaulo.sp.gov.br/conhecasp/turismo_pontos-turisticos_palacio-dos-bandeirantes,,Q9054624
+way,75531452,attraction,Secretaria da Justiça e da Defesa da Cidadania,-23.5484964,-46.6325293,Largo Pátio do Colégio,,https://justica.sp.gov.br/,,Q28677882
+way,75531453,museum,Secretaria da Justiça e da Defesa da Cidadania,-23.5486219,-46.6328604,Largo Pátio do Colégio,,https://justica.sp.gov.br/,,Q28677882
+way,75604816,museum,Catavento Cultural e Educacional,-23.544119,-46.6277812,,,http://www.cataventocultural.org.br/,Tu-Su 09:00-17:00,Q18482277
+way,104410401,museum,Museu de Arte Sacra,-23.5303111,-46.6312032,,,https://museuartesacra.org.br/,Tu-Su 09:00-17:00,
+way,122735123,attraction,,-23.6482558,-46.7238933,Avenida das Nações Unidas,Santo Amaro,,,Q2010303
+way,124962727,attraction,Boogie,-23.6032591,-46.6796812,Rua Alvorada,,,,
+way,125450967,artwork,Monumento a Pedro Álvares Cabral,-23.5818398,-46.6584581,,,,,Q45052250
+way,125450972,museum,Museu de Arte Contemporânea da Universidade de São Paulo,-23.5877825,-46.6509488,Avenida Pedro Álvares Cabral,Ibirapuera,http://www.mac.usp.br,Tu-Su 10:00-21:00,Q2557770
+way,125450976,museum,Museu do Instituto Biológico,-23.585096,-46.6481567,Avenida Conselheiro Rodrigues Alves,,,,Q48419420
+way,125450993,attraction,Parque Ibirapuera,-23.5877115,-46.6581889,Avenida Pedro Álvares Cabral,Ibirapuera,https://prefeitura.sp.gov.br/web/meio_ambiente/w/parques/regiao_sul/14062,05:00-24:00,Q212248
+way,125451290,attraction,Obelisco Mausoléu aos Heróis de 32,-23.5847401,-46.6547381,,,,,Q2914792
+way,125451334,museum,,-23.5886827,-46.6506993,,,,,
+way,128133363,museum,Museu Botânico Doutor João Barbosa Rodrigues,-23.6383849,-46.6239674,Avenida Miguel Estefno,,http://www.ibot.sp.gov.br/,Tu-Su 09:00-17:00,Q10333414
+way,166784137,museum,Museu Paulista,-23.5855774,-46.6097157,Parque da Independência,Ipiranga,https://museudoipiranga.org.br/,Tu-Su 10:00-17:00,Q371803
+way,171487383,museum,Pavilhão da Criatividade Darcy Ribeiro,-23.5263362,-46.6636663,Avenida Auro Soares de Moura Andrade,Barra Funda,,,
+way,182007184,attraction,Mirante do Vale,-23.5421665,-46.6354178,,,,,Q42258
+way,183017604,attraction,Mercado Municipal do Ipiranga,-23.5972575,-46.6004056,Rua Silva Bueno,Ipiranga,,Tu-Sa 08:00-19:00; Su 08:00-13:00,
+way,191591077,museum,Estação Pinacoteca,-23.534819,-46.6387884,Largo General Osório,Luz,https://pinacoteca.org.br/,,Q8779095
+way,191591079,attraction,Mosteiro Nossa Senhora da Imaculada Conceição da Luz,-23.5305136,-46.6305476,Avenida Tiradentes,Luz,https://www.mosteirodaluz.org.br/,,Q28677353
+way,191591082,museum,Museu da Língua Portuguesa,-23.5349786,-46.6350476,Praça da Luz,Luz,https://www.museudalinguaportuguesa.org.br/,,Q2422478
+way,191607149,attraction,Edifício Altino Arantes,-23.5457708,-46.6341278,Rua João Brícola,,,Mo-Fr 10:00-15:00,Q169420
+way,191607150,attraction,Edifício Martinelli,-23.5455261,-46.635222,Avenida São João,Centro,http://www.prediomartinelli.com.br/visitas.php,"Mo-Fr 09:30-11:30,14:00-16:00; Sa 09:00-15:00; Su 09:00-13:00; PH off",Q6777115
+way,202867546,museum,Museu da Imagem e do Som,-23.5725866,-46.6762193,Avenida Europa,Jardim Europa,,,Q1336317
+way,202867567,museum,Museu Brasileiro de Escultura,-23.5732952,-46.676513,Avenida Europa,Jardim Europa,,,Q2923400
+way,203621976,attraction,Monumento a Duque de Caxias,-23.5363477,-46.6433864,,,,,Q10332144
+way,203621979,attraction,Passarela Cultural,-23.5164262,-46.6451754,Avenida Olavo Fontoura,Santana,http://www.anhembi.com.br/espaco/sambodromo/,,Q4764354
+way,204071635,museum,Museu Judaico de São Paulo,-23.550804,-46.6456216,Rua Martinho Prado,,https://museujudaicosp.org.br,Tu-Su 10:00-19:00,Q28677835
+way,204072597,attraction,Beco do Pinto,-23.5483342,-46.6318944,,,,,Q28677881
+way,205784137,museum,Casa da Imagem,-23.5483508,-46.6321846,,,https://www.prefeitura.sp.gov.br/cidade/secretarias/cultura/casa_da_imagem/,,Q9698123
+way,205784140,museum,Colégio José de Anchieta,-23.5480155,-46.6326088,,,,,Q10333385
+way,225642947,attraction,Monumento à Independência,-23.5794006,-46.6102976,Praça do Monumento,Ipiranga,https://www.museudacidade.sp.gov.br/monumentoaindependencia.php,,Q3112581
+way,230916441,attraction,Fábrica do Samba,-23.5186092,-46.6581226,,,,,
+way,231110974,museum,Pinacoteca do Estado de São Paulo,-23.534284,-46.633932,Praça da Luz,Bom Retiro,https://pinacoteca.org.br/,We-Mo 10:00-17:30,Q2095209
+way,231110975,attraction,Parque da Luz,-23.5332126,-46.6350305,Rua Ribeiro de Lima,Bom Retiro,,09:00-18:00,Q3028205
+way,245697728,attraction,Macacário,-23.5646163,-46.7188751,,,,Mo-Su 09:00-16:40,
+way,245697729,museum,Museu de Microbiologia Prof. Isaias Raw,-23.5676458,-46.7194786,Rua Emílio Ribas,,,Tu-Sa 09:00-16:45,Q30937712
+way,245697730,attraction,Recepção de animais,-23.5653518,-46.7188964,,,,,
+way,251211619,attraction,Edifício Itália,-23.5455268,-46.6435738,,,https://www.edificioitalia.com.br/,,Q170610
+way,252528222,attraction,Praça Vila Rubi,-23.7267929,-46.6990411,Avenida Rodrigues Vilares,Vila Rubi,capeladosocorro.prefeitura.sp.gov.br,,
+way,258582964,museum,Museu da Pedra Grande,-23.4364614,-46.6360276,,,,,
+way,261776306,attraction,Macaco-prego-galego,-23.6506436,-46.6181762,,,,,
+way,261776307,attraction,Macaco-prego-de-pelto-amarelo,-23.6508142,-46.6181488,,,,,
+way,261776308,attraction,Macaco-aranha-de-cara-vermelha,-23.6505045,-46.6182787,,,,,
+way,261776309,attraction,Macaco-aranha-de-cara-preta,-23.6504835,-46.6184819,,,,,
+way,268786162,attraction,Pit Stop Kart,-23.5207701,-46.6229179,,,,,
+way,268796828,museum,Museu do Tietê,-23.4934898,-46.5211916,,,,,
+way,268832749,attraction,Conjunto Aquático,-23.4944826,-46.5284891,,,,,
+way,269107101,attraction,Centro Cultural,-23.4950721,-46.5261668,,,,,
+way,269108857,attraction,Palco de eventos,-23.493974,-46.525403,,,,,
+way,290468765,museum,Salão de Chá e Museu,-23.602451,-46.7108324,,,https://www.fundacaooscaramericano.org.br/,Tu-Su 10:00-17:30,Q10286362
+way,291548013,attraction,Relógio Solar,-23.5612584,-46.7203848,,,,,
+way,297191197,attraction,Condor-andino,-23.6496461,-46.617991,,,,,
+way,297191199,attraction,Urubu-Rei,-23.6498032,-46.6176723,,,,,
+way,297191200,attraction,Harpia,-23.6495573,-46.617755,,,,,
+way,297191413,attraction,"Águias, galvioes, corujas, urubus e abutres",-23.6493048,-46.6174948,,,,,
+way,297300870,attraction,Jabuti-gigante,-23.6500517,-46.6174841,,,,,
+way,297300873,attraction,"Avestruz, grande kudu, waterbuck, gazela de thompson, zebra damara e addax",-23.6500084,-46.6167985,,,,,
+way,297301255,attraction,Gansos,-23.6503194,-46.6171322,,,,,
+way,297302350,attraction,Dromedário,-23.6503237,-46.6162867,,,,,
+way,297302351,attraction,Lobo-Guará,-23.6504693,-46.6165813,,,,,
+way,297302563,attraction,Leão,-23.6509224,-46.6172745,,,,,
+way,297302564,attraction,Tigre-siberiano,-23.6507116,-46.6170174,,,,,
+way,297302565,attraction,Urso-de-óculos,-23.6512981,-46.6173218,,,,,
+way,297302831,attraction,Hipopótamo,-23.6523933,-46.616938,,,,,
+way,297302834,attraction,Tigre-branco,-23.6519114,-46.6172679,,,,,
+way,297304306,attraction,"Cisnes, gansos, marrecos e ema",-23.6533141,-46.6168328,,,,,
+way,297337157,attraction,Gazella,-23.6532395,-46.6173788,,,,,
+way,297470077,attraction,,-23.649552,-46.6212048,,,,,
+way,297470078,attraction,Elefante-asiático,-23.6496956,-46.6210794,,,,,
+way,297470079,attraction,Búfalo africano,-23.6500419,-46.6208539,,,,,
+way,297470080,attraction,Canguru,-23.6499903,-46.6205839,,,,,
+way,297470087,attraction,Cachorro-do-mato,-23.6488078,-46.6201129,,,,,
+way,297470090,attraction,Anta,-23.6489778,-46.6217381,,,,,
+way,297470091,attraction,Anta,-23.6489836,-46.6214779,,,,,
+way,297470093,attraction,Warthog,-23.6499696,-46.6212616,,,,,
+way,297470094,attraction,Raposa-do-campo,-23.6486818,-46.6201832,,,,,
+way,297470095,attraction,Cutia e tamandúa-mirim,-23.6503573,-46.6209893,,,,,
+way,297470097,attraction,"Cágados, tartarugas e jacarés",-23.6504494,-46.6209076,,,,,
+way,297470099,attraction,Emu,-23.6479594,-46.6193145,,,,,
+way,297470102,attraction,Flamingos,-23.6489419,-46.6212438,,,,,
+way,297470104,attraction,Ganses-australiano e cisnes,-23.649388,-46.6211253,,,,,
+way,297470106,attraction,Gavial-da-Malásia,-23.6498585,-46.6209959,,,,,
+way,297470116,attraction,Grou-coroado,-23.6483126,-46.6204339,,,,,
+way,297470118,attraction,Jacutinga,-23.6482772,-46.6206123,,,,,
+way,297470120,attraction,Iguana e jabutis,-23.6502511,-46.621057,,,,,
+way,297470121,attraction,Jabutis e cágados,-23.6487764,-46.6218301,,,,,
+way,297470122,attraction,Jacarés e tartarugas,-23.6497331,-46.620895,,,,,
+way,297470123,attraction,Jacarés e tartarugas,-23.6505164,-46.6207531,,,,,
+way,297470125,attraction,"Jacarés, jabutis, tartarugas e cágados",-23.6496907,-46.620723,,,,,
+way,297470128,attraction,Zebra,-23.6502562,-46.620606,,,,,
+way,297470130,attraction,Lobo-guará,-23.650144,-46.6211261,,,,,
+way,297470135,attraction,Pavão-verde e Pavão-azul,-23.6484375,-46.6205606,,,,,
+way,297470139,attraction,Tadornas,-23.6498156,-46.6208348,,,,,
+way,297470141,attraction,Tamanduá-bandeira,-23.6489172,-46.6200089,,,,,
+way,297470143,attraction,Tamanduá-bandeira,-23.6490876,-46.6198763,,,,,
+way,297470145,attraction,Tartarugas e cágados,-23.6488048,-46.6218604,,,,,
+way,297470147,attraction,Tartarugas filhotes,-23.6488341,-46.6218921,,,,,
+way,297470148,attraction,"Seriema, Saíras, Sanhaçu, Saí",-23.6484009,-46.6202859,,,,,
+way,297470150,attraction,Tigre,-23.6480883,-46.6203931,,,,,
+way,297471237,attraction,Recinto Desativado,-23.6494237,-46.6193875,,,,,
+way,297471239,attraction,Girafa,-23.6498419,-46.6182848,,,,,
+way,297471240,attraction,Rinoceronte-branco,-23.6496503,-46.6192001,,,,,
+way,297517741,attraction,Calaus e mutuns,-23.6484748,-46.6212628,,,,,
+way,297517742,attraction,Turacos,-23.6483769,-46.621173,,,,,
+way,297517743,attraction,Turacos,-23.6484771,-46.6211429,,,,,
+way,299387499,attraction,Araras,-23.6493285,-46.6203157,,,,,
+way,299387501,attraction,Formigueiro,-23.6490758,-46.6205839,,,,,
+way,299387502,attraction,"Mico-leão-cara-dourada, Mico-leão-dourada e Mico-leão-preto",-23.6488312,-46.6203208,,,,,
+way,299387503,attraction,Píton,-23.649185,-46.620425,,,,,
+way,299387504,attraction,"Seriemas, periquitos, papagaios, uru, pavó, pica-pau e ararajuba",-23.6486921,-46.6208076,,,,,
+way,299387506,attraction,,-23.6489147,-46.6207157,,,,,
+way,299391166,attraction,Chimpanzé,-23.6514721,-46.6178874,,,,,
+way,299391167,attraction,,-23.6512436,-46.6179236,,,,,
+way,299391168,attraction,,-23.6510374,-46.6178615,,,,,
+way,299391788,attraction,Quati,-23.6494776,-46.6202047,,,,,
+way,299391859,attraction,"Veado-catingueiro, Preguiça-real, preguiça-de-dois-dedos, Seriema-de-perna-preta, Ouriço-catingueiro e Cutia",-23.6490097,-46.6201942,,,,,
+way,299391861,attraction,"Exposicao """"O Pulo do Sapo""",-23.6493354,-46.6199625,,,,,
+way,299391862,attraction,Macaco-aranha-de-cara-preta,-23.649189,-46.620073,,,,,
+way,299391863,attraction,O camnho da serpente,-23.648637,-46.6204721,,,,,
+way,299392077,attraction,Gato-do-mato-grande,-23.6492604,-46.620799,,,,,
+way,299392078,attraction,Gato-mourisco,-23.6493625,-46.6207232,,,,,
+way,299392079,attraction,Jaguatirica,-23.6496001,-46.6205549,,,,,
+way,299392080,attraction,Lince-caracal,-23.6494692,-46.6206419,,,,,
+way,299392081,attraction,Lince-caracal,-23.6488285,-46.6210279,,,,,
+way,299392082,attraction,Gato-do-mato-grande,-23.6489784,-46.6209522,,,,,
+way,299392083,attraction,Suçuarana,-23.6491343,-46.6208768,,,,,
+way,299392278,attraction,Macaco-aranha-de-cara-branca,-23.6504993,-46.6181374,,,,,
+way,299392279,attraction,Macaco-calarara-preto,-23.6506337,-46.6180265,,,,,
+way,299392280,attraction,Quati,-23.6505358,-46.6180545,,,,,
+way,299392538,attraction,,-23.6507741,-46.6176863,,,,,
+way,299392539,attraction,Orangotango,-23.6509199,-46.6177577,,,,,
+way,299392540,attraction,Flamingos,-23.6503342,-46.6176097,,,,,
+way,299588150,zoo,Simba Safari,-23.6537581,-46.6153979,Avenida do Cursino,Vila Moraes,https://www.simbasafari.com.br/,"Mo-Su,PH 09:00-17:00",Q10395314
+way,301601819,museum,Casa das Rosas,-23.5711091,-46.6451797,Avenida Paulista,,https://www.casadasrosas.org.br/,Tu-Su 10:00-22:00; Sa 10:00-18:00,Q8341735
+way,301967702,attraction,Edifício do Tribunal de Justiça de São Paulo,-23.5462726,-46.6455839,Avenida Ipiranga,República,,,Q10303489
+way,304690529,attraction,Casa do Grito,-23.5811193,-46.6096235,Praça do Monumento,Ipiranga,https://www.museudacidade.sp.gov.br/casadogrito.php,,Q9698852
+way,307657136,attraction,Entrada Nucleo Engordador,-23.4043205,-46.585481,Avenida Coronel Sezefredo Fagundes,,,,
+way,307659416,attraction,Entrada Núcleo Pedra Grande,-23.4548068,-46.6357435,,,,,
+way,315938639,museum,Instituto Moreira Salles - IMS Paulista,-23.5560722,-46.6619346,Avenida Paulista,Consolação,,,Q56695385
+way,320729071,museum,Salão de Atos,-23.5275491,-46.6647208,,,,,
+way,323831238,artwork,,-23.5794725,-46.6102934,,,,,Q3112581
+way,327439701,attraction,Escola de Samba Rosas de Ouro,-23.5072223,-46.6877827,Rua Coronel Euclides Machado,Freguesia do Ó,https://sociedaderosasdeouro.com.br/,,
+way,329385698,attraction,Edifício Sampaio Moreira,-23.5467187,-46.636146,Rua Líbero Badaró,,,,Q10270258
+way,333174918,attraction,Edifício Matarazzo,-23.5476231,-46.6374494,Viaduto do Chá,Sé,,,Q10270245
+way,396049369,museum,Fundação Ema Klabin,-23.5734479,-46.6757461,Rua Portugal,Jardim Europa,https://emaklabin.org.br/,We-Su 14:00-17:00,Q5368756
+way,401894448,artwork,Relógio da USP,-23.5595667,-46.7241121,,,https://www.jornaldocampus.usp.br/index.php/2009/09/mais-que-um-relogio/,,
+way,402301497,artwork,,-23.5595732,-46.7241084,,,https://www.jornaldocampus.usp.br/index.php/2009/09/mais-que-um-relogio/,,
+way,409182227,gallery,Itaú Cultural,-23.5704567,-46.6460368,Avenida Paulista,,https://www.itaucultural.org.br/,,Q10304263
+way,414529206,attraction,Casa de Dona Yayá,-23.55444,-46.6428217,Rua Major Diogo,Bixiga,,,Q28677050
+way,414529379,museum,Centro de Preservação Cultural,-23.5543557,-46.6428194,Rua Major Diogo,Bixiga,,,Q18484819
+way,414736253,gallery,Zipper Galeria,-23.5668069,-46.668272,Rua Estados Unidos,Jardim América,,Mo-Sa 11:00-19:00,Q112176146
+way,420117966,museum,Museu das Favelas,-23.5336141,-46.6452175,Avenida Rio Branco,Campos Elíseos,https://museudasfavelas.org.br/,Tu-Su 09:00-17:00,
+way,421294267,attraction,Edifício Meia Nove,-23.539422,-46.6373074,Rua dos Andradas,,,,
+way,421297067,attraction,Palacete Lellis,-23.5389579,-46.63901,Rua Aurora,,,,
+way,421318705,attraction,Shopping Light,-23.5466845,-46.6386693,Rua Coronel Xavier de Toledo,República,https://shoppinglight.com.br/,Mo-Fr 09:00-21:00; Sa 09:00-20:00; Su 11:00-18:00,Q12072491
+way,423244773,attraction,Capela Beneficiencia Portuguesa,-23.5683164,-46.6419811,Rua Maestro Cardim,,,,
+way,424632321,attraction,Capela dos Aflitos,-23.5561314,-46.6346559,Rua dos Aflitos,,https://arquisp.org.br/regiaose/paroquias/mosteiros-igrejas-historicas-oratorios-da-regiao-se/igreja-nossa-senhora-dos-aflitos,,Q28677843
+way,425455864,attraction,Edifício Triângulo,-23.5488574,-46.6346163,,,,,Q4462747
+way,425456078,attraction,Edifício Palacete Tereza Toledo Lara,-23.5487911,-46.6348924,Rua Quintino Bocaiuva,,,,Q10343729
+way,425456141,attraction,Edifício Guinle,-23.5490754,-46.6341352,,,,,Q10270231
+way,425691583,attraction,Edifício Banco de São Paulo,-23.5459386,-46.6345233,Rua Quinze de Novembro,,,,Q27975179
+way,428901231,museum,Museu Lasar Segall,-23.594639,-46.6353445,Rua Berta,Vila Mariana,https://www.gov.br/museus/pt-br/museus-ibram/museu-lasar-segall,We-Mo 11:00-19:00,Q1954360
+way,438641986,attraction,,-23.5407515,-46.6161082,,,,,
+way,439765243,museum,Museu da Imigração do Estado de São Paulo,-23.5496226,-46.6127226,Rua Visconde de Parnaíba,Brás,,Tu-Sa 09:00-17:00; Su 10:00-17:00,Q3854482
+way,444314580,aquarium,Aquário de Itaquera,-23.572094,-46.445081,Avenida Jacu-Pêssego,Itaquera,http://www.aquarioitaquera.com.br/,,
+way,451647239,museum,Capela do Morumbi,-23.6115573,-46.7126071,Avenida Morumbi,,,,Q28677831
+way,453399719,museum,Memorial da Imigração Judaica e do Holocausto,-23.5297757,-46.6385232,Rua da Graça,Bom Retiro,,,
+way,453406393,attraction,Presépio Napolitano,-23.5298183,-46.6314238,Avenida Tiradentes,Luz,,,
+way,479896059,attraction,Serpentário,-23.5672929,-46.7182067,,,,Mo-Su 07:00-18:00,
+way,519804063,museum,Museu Casa Guilherme de Almeida,-23.5468812,-46.6738816,Rua Macapá,Sumaré,https://www.casaguilhermedealmeida.org.br/,Tu-Su 10:00-18:00,Q9698096
+way,520679189,attraction,Mercado Municipal da Lapa,-23.5193202,-46.701809,Rua Herbart,Lapa,https://mercadodalapa.com.br/,Mo-Sa 08:00-18:00,Q10328794
+way,520680590,museum,Estação Ciência,-23.5212233,-46.6984724,Rua Guaicurus,Lapa,,,Q10275655
+way,520684275,museum,Centro Cultural Aúthos Pagano,-23.5269001,-46.715621,Rua Tomé de Souza,Alto da Lapa,,,Q18243220
+way,520831295,attraction,,-23.5317552,-46.6692434,,,,,
+way,520831904,museum,Museu das Culturas Indígenas,-23.5305581,-46.6723499,Rua Dona Germaine Burchard,Água Branca,,Tu-Su 09:00-18:00,
+way,520831914,attraction,Espaço Cultural Tattersal,-23.5320587,-46.6708226,,,,,
+way,520833114,attraction,,-23.5320917,-46.6694612,,,,,
+way,520834218,attraction,,-23.5323113,-46.6710573,,,,,
+way,521403313,gallery,Urban Arts,-23.6064048,-46.671531,Rua Canário,Moema,https://www.urbanarts.com.br,,
+way,537978390,zoo,Mini zoo,-23.6047504,-46.7205883,,,,,
+way,541068807,attraction,Pergolado,-23.5319164,-46.669311,,,,,
+way,555852183,aquarium,Aquário da Luz,-23.5329729,-46.6359108,,,,,
+way,566744159,attraction,Parque da Vila Guilherme-Trote,-23.5130785,-46.5970616,,,,Mo-Su 05:30-22:00,Q10345396
+way,591864306,aquarium,Aquário de São Paulo,-23.5926755,-46.6144707,Rua Huet Bacelar,Vila São José,https://www.aquariodesp.com.br/,Mo-Su 09:00-18:00,Q16493141
+way,618644384,attraction,Bar e Mercearia J. C. Zézito,-23.8319692,-46.7152737,Rua Conde das Galvéias,Jardim Santa Fé,https://www.santosfc.com.br/,Mo-Fr 07:00-19:00,Q13584407
+way,618659452,attraction,Guarda Civil Metropolitana,-23.8159103,-46.736492,Avenida Sadamu Inoue,Jardim dos Alamos,www.gcm.sp.gov.br,24/7,Q10292474
+way,619304793,attraction,102° DP - Socorro - Polícia Civil - Distrito Policial,-23.6763257,-46.7120373,Avenida Atlântica,Socorro,https://www.policiacivil.sp.gov.br/,24/7,
+way,619307068,attraction,Instituto Social Nossa Senhora de Fátima,-23.6803409,-46.7079411,Avenida Coronel Octaviano de Freitas Costa,Veleiros,https://acaonsfatima.org.br/,07:00-23:00,Q719524
+way,636607756,attraction,UPA Parelheiros,-23.8158839,-46.7355489,Avenida Sadamu Inoue,Jardim dos Álamos,http://parelheiros.prefeitura.sp.gov.br,24/7,Q10387674
+way,680812404,museum,Museu Cetrasa de Santo Amaro,-23.6353827,-46.71244,Avenida Professor Alceu Maynard Araújo,,,"Mo,We,Fr 13:30-17:30; Su,PH off",
+way,688234652,attraction,Trilha do Pau Brasil,-23.5317697,-46.668805,,,,,
+way,688251133,attraction,,-23.5324765,-46.6696171,,,,,
+way,698926218,aquarium,,-23.5310602,-46.6694597,,,,,
+way,715582154,museum,Museu Histórico,-23.5644828,-46.719916,Rua Emil Von Behring,,,Tu-Sa 09:00-16:45,Q30937703
+way,736841023,attraction,Beco do Pinto,-23.5484664,-46.6322816,,,,,Q28677881
+way,966577675,attraction,Rua Gonçalo Afonso,-23.5565729,-46.6863819,,,,,Q18932366
+way,984107033,artwork,Luiz Carrara Arte Sacra,-23.527,-46.6208908,Rua Araguaia,,,,
+way,1055848920,museum,Museu da Energia de São Paulo,-23.5304365,-46.6434395,,,,,Q56693950
+way,1068372310,attraction,Monumento às Bandeiras,-23.5800516,-46.660687,,,https://www.saopaulo.sp.gov.br/conhecasp/turismo_monumentos_bandeiras,,Q2916105
+way,1105310678,attraction,Zeus Club,-23.6132104,-46.6671264,Avenida dos Carinás,Moema,,,
+way,1105373012,attraction,Bahamas Club,-23.6154048,-46.6654891,Rua dos Chanés,Moema,,24/7,
+way,1108083385,attraction,Enigma Club,-23.6134618,-46.6620863,Alameda dos Aicás,Moema,,,
+way,1150554873,museum,Museu Histórico da Imigração Japonesa no Brasil,-23.5611831,-46.6350774,Rua São Joaquim,Liberdade,https://www.bunkyo.org.br/br/museu-historico/,Tu-Su 13:00-17:00,Q10333505
+way,1157959640,attraction,Praça Butantã Even,-23.5917295,-46.7383499,Avenida Eliseu de Almeida,,,Mo-Su 10:00-22:00,
+way,1161124844,attraction,G.R.C.E.S Mocidade Alegre,-23.5062331,-46.6904824,,,,,
+way,1227144253,aquarium,Aquário Aberto da Água Preta,-23.5347071,-46.6925701,,,,,
+way,1227496380,gallery,Garimpo,-23.5602402,-46.6652829,Alameda Franca,,,,
+way,1352886446,attraction,Mercado Municipal do Pari,-23.5392421,-46.6253968,Largo do Pari,Brás,,Mo-Sa 04:00-18:00,
+way,1366056271,gallery,,-23.6087894,-46.7130281,,,,,
+way,1370081491,museum,Museu de Arte de São Paulo,-23.5614985,-46.6559642,Av. Paulista,Bela Vista,http://masp.art.br/,Tu-Su 10:00-18:00; Th 10:00-20:00,Q82941
+way,1411342287,attraction,Leiteria Ita,-23.5425219,-46.6386339,Rua do Boticário,,,,
+way,1421506561,theme_park,Glow Park Brooklin,-23.6439892,-46.6733665,Avenida Professor Vicente Rao,Chácara Monte Alegre,,Mo-Fr 13:00-22:00; Sa-Su 09:00-22:00,
+way,1424645933,artwork,Urânia,-23.6514598,-46.6225359,,,,,
+way,1426294508,artwork,Sol,-23.6494315,-46.6230857,,,,,
+way,1427321590,attraction,Ponto de Onibus Antigo,-23.5371458,-46.7075648,,,,,
+way,1432538729,attraction,Roda Rico,-23.5463737,-46.7307263,,,,,Q115841200
+way,1435530183,attraction,Praia de Avallonë,-23.6891005,-46.734595,,,,,
+way,1435531045,attraction,Praia do Sol,-23.6961165,-46.7173149,,,,,
+way,1435532158,attraction,Prainha Jardim Apurá,-23.7146088,-46.6611636,,,,,
+way,1454851144,attraction,,-23.6160027,-46.7220861,,,,,
+way,1479049945,attraction,Mercado Municipal de São Miguel Paulista,-23.4929464,-46.4394932,Avenida Marechal Tito,Cidade Nitro Operária,http://www.prefeitura.sp.gov.br/cidade/secretarias/trabalho/abastecimento/mercados_municipais_e_sacoloes/unidades/mercados/index.php?p=11745,Mo-Sa 09:00-18:00,
+way,1495761962,viewpoint,,-23.6121156,-46.3953371,,,,,
+relation,2738162,attraction,Marquise,-23.5863843,-46.6572755,,,,closed,
+relation,4466370,museum,Memorial da América Latina,-23.5271401,-46.6638412,Avenida Auro Soares de Moura Andrade,Barra Funda,https://memorial.org.br/,Tu-Su 09:00-18:00,Q1920091
+relation,4602996,attraction,Mercado Municipal de São Paulo,-23.5417397,-46.6294216,Rua da Cantareira,Sé,https://oportaldomercadao.com.br/,Mo-Sa 05:00-16:00,Q4120323
+relation,5349780,attraction,Jardim Botânico de São Paulo,-23.6415824,-46.6233451,Avenida Miguel Estéfano,Água Funda,https://jardimbotanico.com.br/,Mo-Su 09:00-17:00,Q3028259
+relation,6310510,attraction,Palácio das Indústrias,-23.5440129,-46.6277365,,,,,Q9054621
+relation,6325653,museum,Solar da Marquesa de Santos,-23.548536,-46.6320187,,,,,Q10373031
+relation,6711205,museum,Museu de Arte Sacra de São Paulo,-23.5303111,-46.6312032,,,https://www.museuartesacra.org.br/pt/museu/museu-da-arte-sacra,Tu-Su 09:00-17:00,Q1954391
+relation,6855635,museum,Museu dos Transportes Públicos Gaetano Ferolla,-23.5248461,-46.6249718,Avenida Cruzeiro do Sul,Canindé,https://www.sptrans.com.br/museu/,Tu-Su 09:00-17:00,Q10333944
+relation,6899084,museum,Museu de Zoologia da USP,-23.5881772,-46.6101484,Avenida Nazaré,Ipiranga,https://www.mz.usp.br/,,Q4193904
+relation,7398292,attraction,Parque Trianon,-23.5623755,-46.6574127,,,,,Q3363931
+relation,7535031,attraction,Predio da Moda,-23.5322708,-46.6698359,,,,,
+relation,8551850,attraction,EMEF Ulysses da Sylveira Guimaraes,-23.8326149,-46.7100054,Rua Conde de Lancastre,Jardim Santa Fé,http://eolgerenciamento.prefeitura.sp.gov.br/frmgerencial/menuescola.aspx?Cod=012688,,Q10369227
+relation,9734636,attraction,Pateo do Collegio,-23.5479561,-46.6326287,,,https://www.pateodocollegio.com.br/,,Q2914788
+relation,18874084,museum,Museu de Arte de São Paulo - Edifício Pietro Maria Bardi,-23.5617896,-46.6553715,Avenida Paulista,Bela Vista,http://masp.art.br/,Tu-Su 10:00-18:00; Th 10:00-20:00,Q82941
