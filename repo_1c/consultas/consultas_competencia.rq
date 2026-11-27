@@ -1,40 +1,47 @@
 # Consultas de las preguntas de competencia (1, 2, 4, 6, 8 y 9)
-# Prefijos comunes:
-# PREFIX ts:  <http://example.org/turismo-sp#>
-# PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+# Cada consulta lleva sus prefijos para poder copiarla sola en el editor SPARQL.
 
 ##### Pregunta 1: alojamientos por distrito y tipo de habitación #####
-PREFIX ts: <http://example.org/turismo-sp#>
+PREFIX ts: <https://jeimytorresg.github.io/turismo-sp-grafo/turismo-sp#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 SELECT ?distrito ?tipo (COUNT(?a) AS ?total)
 WHERE {
   ?a a ts:Alojamiento ;
      ts:ubicadoEnDistrito ?d ;
-     ts:tipoHabitacion ?tipo .
-  ?d ts:nombreDistrito ?distrito .
+     ts:tipoHabitacion ?t .
+  ?t skos:prefLabel ?tipo .
+  FILTER (lang(?tipo) = "es")
+  ?d schema:name ?distrito .
 }
 GROUP BY ?distrito ?tipo
 ORDER BY DESC(?total)
 
 ##### Pregunta 2: espacios culturales por distrito y estado #####
-PREFIX ts: <http://example.org/turismo-sp#>
+PREFIX ts: <https://jeimytorresg.github.io/turismo-sp-grafo/turismo-sp#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 SELECT ?distrito ?estado (COUNT(?e) AS ?total)
 WHERE {
   ?e a ts:EspacioCultural ;
      ts:ubicadoEnDistrito ?d ;
-     ts:estadoFuncionamiento ?estado .
-  ?d ts:nombreDistrito ?distrito .
+     ts:estadoFuncionamiento ?est .
+  ?est skos:prefLabel ?estado .
+  FILTER (lang(?estado) = "es")
+  ?d schema:name ?distrito .
 }
 GROUP BY ?distrito ?estado
 ORDER BY ?distrito ?estado
 
 ##### Pregunta 4: precio y calificación de ubicación en los distritos con más espacios culturales #####
-PREFIX ts: <http://example.org/turismo-sp#>
+PREFIX ts: <https://jeimytorresg.github.io/turismo-sp-grafo/turismo-sp#>
+PREFIX schema: <https://schema.org/>
 SELECT ?distrito ?espacios (COUNT(?a) AS ?alojamientos) (AVG(?precio) AS ?precio_promedio_brl) (AVG(?calif) AS ?calif_ubicacion_promedio)
 WHERE {
   { SELECT ?d (COUNT(?e) AS ?espacios)
     WHERE { ?e a ts:EspacioCultural ; ts:ubicadoEnDistrito ?d . }
     GROUP BY ?d ORDER BY DESC(?espacios) LIMIT 5 }
-  ?d ts:nombreDistrito ?distrito .
+  ?d schema:name ?distrito .
   ?a a ts:Alojamiento ; ts:ubicadoEnDistrito ?d .
   OPTIONAL { ?a ts:precioNocheBRL ?precio }
   OPTIONAL { ?a ts:calificacionUbicacion ?calif }
@@ -43,10 +50,11 @@ GROUP BY ?distrito ?espacios
 ORDER BY DESC(?espacios)
 
 ##### Pregunta 6: alojamientos a 1 km o menos de cada museo de OpenStreetMap #####
-PREFIX ts: <http://example.org/turismo-sp#>
+PREFIX ts: <https://jeimytorresg.github.io/turismo-sp-grafo/turismo-sp#>
+PREFIX schema: <https://schema.org/>
 SELECT ?museo (COUNT(DISTINCT ?a) AS ?alojamientos_cercanos)
 WHERE {
-  ?m a ts:Museo ; ts:nombre ?museo .
+  ?m a ts:Museo ; schema:name ?museo .
   ?a ts:estaCercaDe ?m .
 }
 GROUP BY ?m ?museo
@@ -54,29 +62,34 @@ ORDER BY DESC(?alojamientos_cercanos)
 LIMIT 20
 
 ##### Pregunta 8: atracciones en distritos con bibliotecas, teatros o museos de la SMC #####
-PREFIX ts: <http://example.org/turismo-sp#>
+PREFIX ts: <https://jeimytorresg.github.io/turismo-sp-grafo/turismo-sp#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 SELECT DISTINCT ?distrito ?atraccion ?categoria
 WHERE {
   ?x a ?clase ; ts:ubicadoEnDistrito ?d .
   VALUES ?clase { ts:Biblioteca ts:Teatro ts:MuseoAcervo }
-  ?at a ts:AtraccionTuristica ; ts:ubicadoEnDistrito ?d ; ts:categoriaOsm ?categoria .
-  OPTIONAL { ?at ts:nombre ?atraccion }
-  ?d ts:nombreDistrito ?distrito .
+  ?at a ts:AtraccionTuristica ; ts:ubicadoEnDistrito ?d ; ts:categoriaOsm ?cat .
+  ?cat skos:prefLabel ?categoria .
+  FILTER (lang(?categoria) = "es")
+  OPTIONAL { ?at schema:name ?atraccion }
+  ?d schema:name ?distrito .
 }
 ORDER BY ?distrito ?categoria
 
 ##### Pregunta 9: alojamientos en distritos con espacios cerrados, cerrados temporalmente o en obras #####
-PREFIX ts: <http://example.org/turismo-sp#>
+PREFIX ts: <https://jeimytorresg.github.io/turismo-sp-grafo/turismo-sp#>
+PREFIX schema: <https://schema.org/>
 SELECT ?distrito ?espacios_no_operativos (COUNT(?a) AS ?alojamientos)
 WHERE {
   { SELECT ?d (COUNT(?e) AS ?espacios_no_operativos)
     WHERE {
-      ?e a ts:EspacioCultural ; ts:ubicadoEnDistrito ?d ; ts:estadoFuncionamiento ?estado .
-      FILTER (?estado IN ("Fechado", "Fechado temporariamente", "Em obras"))
+      ?e a ts:EspacioCultural ; ts:ubicadoEnDistrito ?d ; ts:estadoFuncionamiento ?est .
+      VALUES ?est { ts:EF_Cerrado ts:EF_CerradoTemporalmente ts:EF_EnObras }
     }
     GROUP BY ?d }
   ?a a ts:Alojamiento ; ts:ubicadoEnDistrito ?d .
-  ?d ts:nombreDistrito ?distrito .
+  ?d schema:name ?distrito .
 }
 GROUP BY ?distrito ?espacios_no_operativos
 ORDER BY DESC(?alojamientos)
