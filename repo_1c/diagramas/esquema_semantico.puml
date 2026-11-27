@@ -1,0 +1,76 @@
+@startuml
+title Esquema semántico RDF: turismo en São Paulo (1B)
+hide circle
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
+skinparam dpi 110
+
+class "ts:Lugar" as Lugar <<abstracta>> {
+  ts:nombre : xsd:string
+  ts:latitud : xsd:decimal
+  ts:longitud : xsd:decimal
+}
+
+class "ts:Distrito" as Distrito {
+  ts:nombreDistrito : xsd:string
+}
+
+class "ts:Alojamiento" as Alojamiento {
+  ts:idAirbnb : xsd:integer
+  ts:tipoHabitacion : xsd:string
+  ts:capacidad : xsd:integer
+  ts:numeroHabitaciones : xsd:decimal
+  ts:precioNocheBRL : xsd:decimal
+  ts:calificacionGeneral : xsd:decimal
+  ts:calificacionUbicacion : xsd:decimal
+  ts:numeroResenas : xsd:integer
+  ts:urlAnuncio : xsd:anyURI
+}
+
+class "ts:PuntoDeInteres" as Punto <<abstracta>> {
+  ts:direccion : xsd:string
+  ts:horario : xsd:string
+  ts:sitioWeb : xsd:string
+}
+
+class "ts:EspacioCultural" as Espacio {
+  ts:tipoEquipamiento : xsd:string
+  ts:estadoFuncionamiento : xsd:string
+  ts:anioInauguracion : xsd:gYear
+  ts:tematica : xsd:string
+  ts:subprefeitura : xsd:string
+  ts:region : xsd:string
+}
+
+class "ts:AtraccionTuristica" as Atraccion {
+  ts:idOsm : xsd:integer
+  ts:tipoObjetoOsm : xsd:string
+  ts:categoriaOsm : xsd:string
+  ts:wikidata : xsd:string
+}
+
+class "ts:Biblioteca" as Biblioteca
+class "ts:Teatro" as Teatro
+class "ts:MuseoAcervo" as MuseoAcervo
+class "ts:Museo" as Museo
+
+Alojamiento --|> Lugar
+Punto --|> Lugar
+Espacio --|> Punto
+Atraccion --|> Punto
+Biblioteca --|> Espacio
+Teatro --|> Espacio
+MuseoAcervo --|> Espacio
+Museo --|> Atraccion
+
+Lugar --> Distrito : ts:ubicadoEnDistrito
+Alojamiento --> Atraccion : ts:estaCercaDe
+
+note bottom of Lugar
+  ts:latitud y ts:longitud son subpropiedades
+  de geo:lat y geo:long (WGS84).
+  ts:Lugar es subclase de geo:SpatialThing.
+end note
+@enduml

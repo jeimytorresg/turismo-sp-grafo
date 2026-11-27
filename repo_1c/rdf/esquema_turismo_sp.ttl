@@ -1,0 +1,218 @@
+@prefix ts:   <http://example.org/turismo-sp#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo:  <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+##### Ontología #####
+<http://example.org/turismo-sp> a owl:Ontology ;
+    rdfs:label "Esquema semántico: turismo en São Paulo"@es ;
+    rdfs:comment "Alojamientos, espacios culturales y atracciones turísticas de São Paulo, relacionados por distrito y por cercanía."@es .
+
+##### Clases #####
+ts:Lugar a owl:Class ;
+    rdfs:subClassOf geo:SpatialThing ;
+    rdfs:label "Lugar"@es ;
+    rdfs:comment "Clase abstracta. Cualquier sitio de la ciudad que tiene nombre y ubicación."@es .
+
+ts:Distrito a owl:Class ;
+    rdfs:label "Distrito"@es ;
+    rdfs:comment "Distrito de la ciudad de São Paulo."@es .
+
+ts:Alojamiento a owl:Class ;
+    rdfs:subClassOf ts:Lugar ;
+    rdfs:label "Alojamiento"@es ;
+    rdfs:comment "Alojamiento de corta estancia publicado en Airbnb (Inside Airbnb)."@es .
+
+ts:PuntoDeInteres a owl:Class ;
+    rdfs:subClassOf ts:Lugar ;
+    rdfs:label "Punto de interés"@es ;
+    rdfs:comment "Clase abstracta. Lugar que se visita y que puede tener dirección, horario y sitio web."@es .
+
+ts:EspacioCultural a owl:Class ;
+    rdfs:subClassOf ts:PuntoDeInteres ;
+    rdfs:label "Espacio cultural"@es ;
+    rdfs:comment "Equipamiento cultural municipal de la Secretaría Municipal de Cultura (SMC)."@es .
+
+ts:AtraccionTuristica a owl:Class ;
+    rdfs:subClassOf ts:PuntoDeInteres ;
+    rdfs:label "Atracción turística"@es ;
+    rdfs:comment "Atracción turística registrada en OpenStreetMap (etiqueta tourism)."@es .
+
+ts:Biblioteca a owl:Class ;
+    rdfs:subClassOf ts:EspacioCultural ;
+    rdfs:label "Biblioteca"@es ;
+    rdfs:comment "Espacio cultural de la SMC con tipo de equipamiento Biblioteca."@es .
+
+ts:Teatro a owl:Class ;
+    rdfs:subClassOf ts:EspacioCultural ;
+    rdfs:label "Teatro"@es ;
+    rdfs:comment "Espacio cultural de la SMC con tipo de equipamiento Teatro."@es .
+
+ts:MuseoAcervo a owl:Class ;
+    rdfs:subClassOf ts:EspacioCultural ;
+    rdfs:label "Museo o acervo"@es ;
+    rdfs:comment "Espacio cultural de la SMC con tipo de equipamiento Museu/Acervo."@es .
+
+ts:Museo a owl:Class ;
+    rdfs:subClassOf ts:AtraccionTuristica ;
+    rdfs:label "Museo"@es ;
+    rdfs:comment "Atracción de OpenStreetMap con tourism=museum."@es .
+
+##### Propiedades de objeto #####
+ts:ubicadoEnDistrito a owl:ObjectProperty ;
+    rdfs:domain ts:Lugar ;
+    rdfs:range ts:Distrito ;
+    rdfs:label "ubicado en distrito"@es ;
+    rdfs:comment "Distrito donde se encuentra el lugar."@es .
+
+ts:estaCercaDe a owl:ObjectProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range ts:AtraccionTuristica ;
+    rdfs:label "está cerca de"@es ;
+    rdfs:comment "La atracción está a 1 km o menos del alojamiento (distancia entre coordenadas)."@es .
+
+##### Propiedades de datos: Lugar #####
+ts:nombre a owl:DatatypeProperty ;
+    rdfs:domain ts:Lugar ;
+    rdfs:range xsd:string ;
+    rdfs:label "nombre"@es .
+
+ts:latitud a owl:DatatypeProperty ;
+    rdfs:subPropertyOf geo:lat ;
+    rdfs:domain ts:Lugar ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "latitud"@es .
+
+ts:longitud a owl:DatatypeProperty ;
+    rdfs:subPropertyOf geo:long ;
+    rdfs:domain ts:Lugar ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "longitud"@es .
+
+##### Propiedades de datos: Distrito #####
+ts:nombreDistrito a owl:DatatypeProperty ;
+    rdfs:domain ts:Distrito ;
+    rdfs:range xsd:string ;
+    rdfs:label "nombre del distrito"@es .
+
+##### Propiedades de datos: Alojamiento #####
+ts:idAirbnb a owl:DatatypeProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:integer ;
+    rdfs:label "id de Airbnb"@es .
+
+ts:tipoHabitacion a owl:DatatypeProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:string ;
+    rdfs:label "tipo de habitación"@es ;
+    rdfs:comment "Valor de room_type: Entire home/apt, Private room, Shared room o Hotel room."@es .
+
+ts:capacidad a owl:DatatypeProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:integer ;
+    rdfs:label "capacidad"@es ;
+    rdfs:comment "Número máximo de huéspedes (accommodates)."@es .
+
+ts:numeroHabitaciones a owl:DatatypeProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "número de habitaciones"@es .
+
+ts:precioNocheBRL a owl:DatatypeProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "precio por noche (BRL)"@es ;
+    rdfs:comment "Precio diario en reales brasileños, convertido de texto a número."@es .
+
+ts:calificacionGeneral a owl:DatatypeProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "calificación general"@es .
+
+ts:calificacionUbicacion a owl:DatatypeProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "calificación de ubicación"@es .
+
+ts:numeroResenas a owl:DatatypeProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:integer ;
+    rdfs:label "número de reseñas"@es .
+
+ts:urlAnuncio a owl:DatatypeProperty ;
+    rdfs:domain ts:Alojamiento ;
+    rdfs:range xsd:anyURI ;
+    rdfs:label "URL del anuncio"@es .
+
+##### Propiedades de datos: PuntoDeInteres #####
+ts:direccion a owl:DatatypeProperty ;
+    rdfs:domain ts:PuntoDeInteres ;
+    rdfs:range xsd:string ;
+    rdfs:label "dirección"@es .
+
+ts:horario a owl:DatatypeProperty ;
+    rdfs:domain ts:PuntoDeInteres ;
+    rdfs:range xsd:string ;
+    rdfs:label "horario"@es .
+
+ts:sitioWeb a owl:DatatypeProperty ;
+    rdfs:domain ts:PuntoDeInteres ;
+    rdfs:range xsd:string ;
+    rdfs:label "sitio web"@es .
+
+##### Propiedades de datos: EspacioCultural #####
+ts:tipoEquipamiento a owl:DatatypeProperty ;
+    rdfs:domain ts:EspacioCultural ;
+    rdfs:range xsd:string ;
+    rdfs:label "tipo de equipamiento"@es .
+
+ts:estadoFuncionamiento a owl:DatatypeProperty ;
+    rdfs:domain ts:EspacioCultural ;
+    rdfs:range xsd:string ;
+    rdfs:label "estado de funcionamiento"@es ;
+    rdfs:comment "Valores del archivo: Em funcionamento, Fechado, Fechado temporariamente, Em obras."@es .
+
+ts:anioInauguracion a owl:DatatypeProperty ;
+    rdfs:domain ts:EspacioCultural ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "año de inauguración"@es .
+
+ts:tematica a owl:DatatypeProperty ;
+    rdfs:domain ts:EspacioCultural ;
+    rdfs:range xsd:string ;
+    rdfs:label "temática"@es .
+
+ts:subprefeitura a owl:DatatypeProperty ;
+    rdfs:domain ts:EspacioCultural ;
+    rdfs:range xsd:string ;
+    rdfs:label "subprefeitura"@es .
+
+ts:region a owl:DatatypeProperty ;
+    rdfs:domain ts:EspacioCultural ;
+    rdfs:range xsd:string ;
+    rdfs:label "región"@es .
+
+##### Propiedades de datos: AtraccionTuristica #####
+ts:idOsm a owl:DatatypeProperty ;
+    rdfs:domain ts:AtraccionTuristica ;
+    rdfs:range xsd:integer ;
+    rdfs:label "id de OpenStreetMap"@es .
+
+ts:tipoObjetoOsm a owl:DatatypeProperty ;
+    rdfs:domain ts:AtraccionTuristica ;
+    rdfs:range xsd:string ;
+    rdfs:label "tipo de objeto OSM"@es ;
+    rdfs:comment "node, way o relation."@es .
+
+ts:categoriaOsm a owl:DatatypeProperty ;
+    rdfs:domain ts:AtraccionTuristica ;
+    rdfs:range xsd:string ;
+    rdfs:label "categoría OSM"@es ;
+    rdfs:comment "Valor de la etiqueta tourism: attraction, artwork, museum, viewpoint, gallery, aquarium, theme_park o zoo."@es .
+
+ts:wikidata a owl:DatatypeProperty ;
+    rdfs:domain ts:AtraccionTuristica ;
+    rdfs:range xsd:string ;
+    rdfs:label "identificador de Wikidata"@es .
